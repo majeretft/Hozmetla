@@ -1,0 +1,159 @@
+/* Link to color scheme "http://colorscheme.ru/#2L21TsOsOK-K-" */
+
+@bg-color: #fefefe;
+@text-color-white: #e6e6e6;
+@bg-color-footer: #125B02;
+@text-color-normal: #69030C;
+@text-color-light: #DE1629;
+
+body {
+	background-color: @bg-color;
+}
+
+header,
+footer {
+	color: @text-color-white;
+	background-color: @bg-color-footer;
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+	a {
+		color: @text-color-white;
+
+		&:hover {
+			color: darken(@text-color-white, 15%);
+		}
+	}
+
+	.header-text {
+		font-size: 1.1em;
+	}
+
+	.contacts {
+		font-size: 1.1em;
+
+		> span {
+			margin-left: 1em;
+			margin-right: 1em;
+		}
+
+		> a {
+			white-space: nowrap;
+		}
+	}
+}
+
+header {
+	margin-bottom: 2em;
+}
+
+footer {
+	margin-top: 2em;
+}
+
+main {
+	@screen-sm-min: 768px;
+	@screen-md-min: 992px;
+	@screen-lg-min: 1200px;
+
+	@container-sm: 750px;
+	@container-md: 970px;
+	@container-lg: 1170px;
+
+	@img-x: 500px;
+	@img-y: 250px;
+
+	@btn-height: 34px;
+	@border-color: @bg-color-footer;
+
+	.product {
+		position: relative;
+		border: 1px solid @border-color;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		max-width: @img-x;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1.5em;
+
+		.product-photo,
+		.product-photo2 {
+		}
+
+		.product-details,
+		.product-details2 {
+			margin-bottom: @btn-height + 5px;
+
+			h3 {
+				color: @text-color-light;
+			}
+
+			p {
+				color: @text-color-normal;
+			}
+		}
+
+		.product-button,
+		.product-button2 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			border-bottom: none;
+			color: @text-color-normal;
+		}
+	}
+
+	@media (min-width: @screen-sm-min) {
+	}
+
+	@media (min-width: @screen-md-min) {
+		.product {
+			max-width: none;
+			margin-left: 0;
+			margin-right: 0;
+
+			.product-photo {
+				float: left;
+			}
+
+			.product-photo2 {
+				float: right;
+			}
+
+			.product-details,
+			.product-details2 {
+				height: @img-y;
+				width: @container-md - @img-x - 30px;
+				display: table-cell;
+				margin-bottom: 0;
+				vertical-align: middle;
+
+				h3,
+				p {
+					text-align: center;
+					vertical-align: middle;
+				}
+			}
+
+			.product-button2 {
+				right: auto;
+				left: 0;
+			}
+		}
+	}
+
+	@media (min-width: @screen-lg-min) {
+		.product {
+			.product-details {
+				width: @container-lg - @img-x - 30px;
+			}
+		}
+	}
+}
+
+/* Bootstrap overrides */
+.btn {
+	border-color: @bg-color-footer;
+	border-radius: 0;
+}

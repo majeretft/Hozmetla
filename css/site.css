@@ -1,0 +1,115 @@
+﻿/* Link to color scheme "http://colorscheme.ru/#2L21TsOsOK-K-" */
+body {
+  background-color: #fefefe;
+}
+header,
+footer {
+  color: #e6e6e6;
+  background-color: #125B02;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+header a,
+footer a {
+  color: #e6e6e6;
+}
+header a:hover,
+footer a:hover {
+  color: #c0c0c0;
+}
+header .header-text,
+footer .header-text {
+  font-size: 1.1em;
+}
+header .contacts,
+footer .contacts {
+  font-size: 1.1em;
+}
+header .contacts > span,
+footer .contacts > span {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+header .contacts > a,
+footer .contacts > a {
+  white-space: nowrap;
+}
+header {
+  margin-bottom: 2em;
+}
+footer {
+  margin-top: 2em;
+}
+main .product {
+  position: relative;
+  border: 1px solid #125B02;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+}
+main .product .product-details,
+main .product .product-details2 {
+  margin-bottom: 39px;
+}
+main .product .product-details h3,
+main .product .product-details2 h3 {
+  color: #DE1629;
+}
+main .product .product-details p,
+main .product .product-details2 p {
+  color: #69030C;
+}
+main .product .product-button,
+main .product .product-button2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: none;
+  color: #69030C;
+}
+@media (min-width: 992px) {
+  main .product {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main .product .product-photo {
+    float: left;
+  }
+  main .product .product-photo2 {
+    float: right;
+  }
+  main .product .product-details,
+  main .product .product-details2 {
+    height: 250px;
+    width: 440px;
+    display: table-cell;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  main .product .product-details h3,
+  main .product .product-details2 h3,
+  main .product .product-details p,
+  main .product .product-details2 p {
+    text-align: center;
+    vertical-align: middle;
+  }
+  main .product .product-button2 {
+    right: auto;
+    left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  main .product .product-details {
+    width: 640px;
+  }
+}
+/* Bootstrap overrides */
+.btn {
+  border-color: #125B02;
+  border-radius: 0;
+}

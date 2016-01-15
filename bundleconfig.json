@@ -1,0 +1,16 @@
+[
+  {
+    "outputFileName": "css/fw.css",
+    "inputFiles": [
+      "src_css/bootstrap-theme.css",
+      "src_css/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "js/ie.js",
+    "inputFiles": [
+      "src_js/respond.min.js",
+      "src_js/modernizr-2.8.3.min.js"
+    ]
+  }
+]
