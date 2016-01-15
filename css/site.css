@@ -104,7 +104,8 @@ main .product .product-button2 {
   }
 }
 @media (min-width: 1200px) {
-  main .product .product-details {
+  main .product .product-details,
+  main .product .product-details2 {
     width: 640px;
   }
 }
