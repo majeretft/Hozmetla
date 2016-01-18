@@ -1,27 +1,38 @@
-/* Link to color scheme "http://colorscheme.ru/#2L21TsOsOK-K-" */
+/* Link to color scheme "http://colorscheme.ru/#4I41Tw0w0w0w0" */
 
-@bg-color: #fefefe;
-@text-color-white: #e6e6e6;
-@bg-color-footer: #125B02;
-@text-color-normal: #69030C;
-@text-color-light: #DE1629;
+@bg-body-color: #4A036F;
+@bg-header-color: #383838;
+@bg-product-color: #612580;
+@bg-contacts-color: #9B2766;
+
+@text-color-gray: #e6e6e6;
+@text-header-color: @text-color-gray;
+@text-header-color-hover: darken(@text-header-color, 15%);
+@text-product-color: @text-color-gray;
+@text-product-color-hx: #FCFF40;
+@text-contacts-color: @text-color-gray;
+@text-contacts-decoration-color: #B6F63E;
+
+@product-decoration-color: #FCFF40;
+@product-decoration-color-2: #FBFE00;
+@product-decoration-text-color: #860049;
 
 body {
-	background-color: @bg-color;
+	background-color: @bg-body-color;
 }
 
 header,
 footer {
-	color: @text-color-white;
-	background-color: @bg-color-footer;
+	color: @text-header-color;
+	background-color: @bg-header-color;
 	padding-top: 1em;
 	padding-bottom: 1em;
 
 	a {
-		color: @text-color-white;
+		color: @text-header-color;
 
 		&:hover {
-			color: darken(@text-color-white, 15%);
+			color: @text-header-color-hover;
 		}
 	}
 
@@ -64,11 +75,10 @@ main {
 	@img-y: 250px;
 
 	@btn-height: 34px;
-	@border-color: @bg-color-footer;
 
 	.product {
 		position: relative;
-		border: 1px solid @border-color;
+		border: 1px solid @product-decoration-color;
 		border-top: none;
 		border-left: none;
 		border-right: none;
@@ -76,6 +86,7 @@ main {
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 1.5em;
+		background-color: @bg-product-color;
 
 		.product-photo,
 		.product-photo2 {
@@ -83,14 +94,16 @@ main {
 
 		.product-details,
 		.product-details2 {
-			margin-bottom: @btn-height + 5px;
+			margin-bottom: @btn-height + 10px;
+			padding-left: 5px;
+			padding-right: 5px;
 
 			h3 {
-				color: @text-color-light;
+				color: @text-product-color-hx;
 			}
 
 			p {
-				color: @text-color-normal;
+				color: @text-product-color;
 			}
 		}
 
@@ -100,7 +113,13 @@ main {
 			bottom: 0;
 			right: 0;
 			border-bottom: none;
-			color: @text-color-normal;
+			color: @product-decoration-text-color;
+			border-color: @product-decoration-color;
+			background-color: @product-decoration-color;
+
+			&:hover {
+				background-color: @product-decoration-color-2;
+			}
 		}
 	}
 
@@ -151,10 +170,82 @@ main {
 			}
 		}
 	}
+
+	.contacts {
+		padding-bottom: 30px;
+		background-color: @bg-contacts-color;
+
+		.email,
+		.phone,
+		.address {
+			margin-top: 20px;
+
+			> h4 {
+				color: @text-contacts-decoration-color;
+			}
+
+			> p {
+				color: @text-contacts-color;
+			}
+		}
+
+		.email,
+		.phone {
+			margin-bottom: 15px;
+		}
+
+
+		.email {
+		}
+
+		.phone {
+		}
+
+		.address {
+		}
+	}
+
+	@media (min-width: @screen-sm-min) {
+	}
+
+	@media (min-width: @screen-md-min) {
+		.contacts {
+			padding-top: 30px;
+		}
+	}
+
+	@media (min-width: @screen-lg-min) {
+	}
+
+	.promo {
+		margin-top: 20px;
+
+		> div {
+			width: 100px;
+			height: 100px;
+			padding-top: 25px;
+			display: inline-block;
+			border: 5px solid @product-decoration-color;
+			margin-bottom: 10px;
+			margin-top: 10px;
+			color: @product-decoration-color;
+
+			> span {
+				font-size: 40px;
+			}
+		}
+
+		> h4 {
+			color: @product-decoration-color;
+		}
+
+		> p {
+			color: @text-product-color;
+		}
+	}
 }
 
 /* Bootstrap overrides */
 .btn {
-	border-color: @bg-color-footer;
 	border-radius: 0;
 }

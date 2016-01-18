@@ -1,11 +1,11 @@
-﻿/* Link to color scheme "http://colorscheme.ru/#2L21TsOsOK-K-" */
+﻿/* Link to color scheme "http://colorscheme.ru/#4I41Tw0w0w0w0" */
 body {
-  background-color: #fefefe;
+  background-color: #4A036F;
 }
 header,
 footer {
   color: #e6e6e6;
-  background-color: #125B02;
+  background-color: #383838;
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -42,7 +42,7 @@ footer {
 }
 main .product {
   position: relative;
-  border: 1px solid #125B02;
+  border: 1px solid #FCFF40;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -50,18 +50,21 @@ main .product {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
+  background-color: #612580;
 }
 main .product .product-details,
 main .product .product-details2 {
-  margin-bottom: 39px;
+  margin-bottom: 44px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 main .product .product-details h3,
 main .product .product-details2 h3 {
-  color: #DE1629;
+  color: #FCFF40;
 }
 main .product .product-details p,
 main .product .product-details2 p {
-  color: #69030C;
+  color: #e6e6e6;
 }
 main .product .product-button,
 main .product .product-button2 {
@@ -69,7 +72,13 @@ main .product .product-button2 {
   bottom: 0;
   right: 0;
   border-bottom: none;
-  color: #69030C;
+  color: #860049;
+  border-color: #FCFF40;
+  background-color: #FCFF40;
+}
+main .product .product-button:hover,
+main .product .product-button2:hover {
+  background-color: #FBFE00;
 }
 @media (min-width: 992px) {
   main .product {
@@ -109,8 +118,57 @@ main .product .product-button2 {
     width: 640px;
   }
 }
+main .contacts {
+  padding-bottom: 30px;
+  background-color: #9B2766;
+}
+main .contacts .email,
+main .contacts .phone,
+main .contacts .address {
+  margin-top: 20px;
+}
+main .contacts .email > h4,
+main .contacts .phone > h4,
+main .contacts .address > h4 {
+  color: #B6F63E;
+}
+main .contacts .email > p,
+main .contacts .phone > p,
+main .contacts .address > p {
+  color: #e6e6e6;
+}
+main .contacts .email,
+main .contacts .phone {
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+  main .contacts {
+    padding-top: 30px;
+  }
+}
+main .promo {
+  margin-top: 20px;
+}
+main .promo > div {
+  width: 100px;
+  height: 100px;
+  padding-top: 25px;
+  display: inline-block;
+  border: 5px solid #FCFF40;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #FCFF40;
+}
+main .promo > div > span {
+  font-size: 40px;
+}
+main .promo > h4 {
+  color: #FCFF40;
+}
+main .promo > p {
+  color: #e6e6e6;
+}
 /* Bootstrap overrides */
 .btn {
-  border-color: #125B02;
   border-radius: 0;
 }
