@@ -6,8 +6,6 @@ header,
 footer {
   color: #e6e6e6;
   background-color: #383838;
-  padding-top: 1em;
-  padding-bottom: 1em;
 }
 header a,
 footer a {
@@ -34,11 +32,69 @@ header .contacts > a,
 footer .contacts > a {
   white-space: nowrap;
 }
+header .about,
+footer .about {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
 header {
   margin-bottom: 2em;
 }
+header .menu {
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #B6F63E;
+  border-left: none;
+  border-right: none;
+}
+header .menu > li {
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+header .menu > li > a {
+  color: #B6F63E;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .menu > li > a:hover {
+  color: #E768AD;
+}
+@media (min-width: 768px) {
+  header .menu > li {
+    display: inline-block;
+  }
+}
 footer {
   margin-top: 2em;
+}
+footer .contacts-full .email,
+footer .contacts-full .phone,
+footer .contacts-full .address {
+  margin-top: 20px;
+}
+footer .contacts-full .email > h4,
+footer .contacts-full .phone > h4,
+footer .contacts-full .address > h4 {
+  color: #B6F63E;
+}
+footer .contacts-full .email > p,
+footer .contacts-full .phone > p,
+footer .contacts-full .address > p {
+  color: #e6e6e6;
+}
+footer .contacts-full .email,
+footer .contacts-full .phone {
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+  footer .contacts {
+    padding-top: 30px;
+  }
 }
 main .product {
   position: relative;
@@ -118,27 +174,26 @@ main .product .product-button2:hover {
     width: 640px;
   }
 }
-main .contacts {
-  padding-bottom: 30px;
+main .contacts-full {
   background-color: #9B2766;
 }
-main .contacts .email,
-main .contacts .phone,
-main .contacts .address {
+main .contacts-full .email,
+main .contacts-full .phone,
+main .contacts-full .address {
   margin-top: 20px;
 }
-main .contacts .email > h4,
-main .contacts .phone > h4,
-main .contacts .address > h4 {
+main .contacts-full .email > h4,
+main .contacts-full .phone > h4,
+main .contacts-full .address > h4 {
   color: #B6F63E;
 }
-main .contacts .email > p,
-main .contacts .phone > p,
-main .contacts .address > p {
+main .contacts-full .email > p,
+main .contacts-full .phone > p,
+main .contacts-full .address > p {
   color: #e6e6e6;
 }
-main .contacts .email,
-main .contacts .phone {
+main .contacts-full .email,
+main .contacts-full .phone {
   margin-bottom: 15px;
 }
 @media (min-width: 992px) {
@@ -167,6 +222,87 @@ main .promo > h4 {
 }
 main .promo > p {
   color: #e6e6e6;
+}
+main .product-data .caption {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #FCFF40;
+}
+main .product-data .caption small {
+  color: #cecf70;
+}
+main .product-data .detail {
+  color: #e6e6e6;
+}
+main .product-data .advantages {
+  color: #e6e6e6;
+}
+#photoes {
+  margin-bottom: 5px;
+}
+@media (min-width: 992px) {
+  #photoes {
+    float: left;
+  }
+}
+.photoes-carousel {
+  max-width: 805px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.photoes-carousel .photoes-thumbnails {
+  max-width: 600px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .photoes-carousel .photoes-thumbnails {
+    float: left;
+    max-width: 194px;
+    width: auto;
+    margin-left: 5px;
+    margin-bottom: 0;
+  }
+}
+.photoes-carousel .photoes-thumbnails > li {
+  padding: 1px;
+  max-width: 300px;
+  width: 33.3333333333%;
+  display: block;
+  float: left;
+  border: 2px solid #4A036F;
+}
+@media (min-width: 992px) {
+  .photoes-carousel .photoes-thumbnails > li {
+    float: none;
+    max-width: 100%;
+    width: auto;
+  }
+}
+.photoes-carousel .photoes-thumbnails > li.active {
+  border: 2px solid #FBFE00;
+  -moz-transition: border-color linear 0.5s;
+  -o-transition: border-color linear 0.5s;
+  -webkit-transition: border-color linear 0.5s;
+  transition: border-color linear 0.5s;
+}
+.photoes-carousel .photoes-thumbnails > li.active > img {
+  opacity: 0.75;
+  -moz-transition: opacity linear 0.5s;
+  -o-transition: opacity linear 0.5s;
+  -webkit-transition: opacity linear 0.5s;
+  transition: opacity linear 0.5s;
+}
+.photoes-carousel .photoes-thumbnails > li:hover {
+  border: 2px solid #FBFE00;
+  -moz-transition: border-color linear 0.5s;
+  -o-transition: border-color linear 0.5s;
+  -webkit-transition: border-color linear 0.5s;
+  transition: border-color linear 0.5s;
 }
 /* Bootstrap overrides */
 .btn {
