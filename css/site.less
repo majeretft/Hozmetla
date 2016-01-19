@@ -314,6 +314,12 @@ main {
 			margin-right: auto;
 			margin-left: auto;
 			border: 1px solid @product-decoration-color-2;
+			background-image: url(../img/watermark.png);
+			background-repeat: repeat;
+
+			@media (max-width: @screen-md-min) {
+				background-size: 100px;
+			}
 
 			@media (min-width: @screen-md-min) {
 				max-width: 805px;
@@ -331,7 +337,7 @@ main {
 				#load {
 					font-size: 50px;
 					color: @product-decoration-color-2;
-					background-color: transparent;
+					background-color: @bg-body-color;
 					border: none;
 
 					.glyphicon {
@@ -450,4 +456,11 @@ main {
 /* Bootstrap overrides */
 .btn {
 	border-radius: 0;
+}
+
+/* Yandex share */
+#social {
+	display: block;
+	margin: 10px auto 5px auto;
+	text-align: center;
 }

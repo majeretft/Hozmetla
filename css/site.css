@@ -238,6 +238,13 @@ main .product-data .product-3d {
   margin-right: auto;
   margin-left: auto;
   border: 1px solid #FBFE00;
+  background-image: url(../img/watermark.png);
+  background-repeat: repeat;
+}
+@media (max-width: 992px) {
+  main .product-data .product-3d {
+    background-size: 100px;
+  }
 }
 @media (min-width: 992px) {
   main .product-data .product-3d {
@@ -255,7 +262,7 @@ main .product-data .product-3d #load-wrapper > div {
 main .product-data .product-3d #load-wrapper #load {
   font-size: 50px;
   color: #FBFE00;
-  background-color: transparent;
+  background-color: #4A036F;
   border: none;
 }
 main .product-data .product-3d #load-wrapper #load .glyphicon {
@@ -362,4 +369,10 @@ main .product-data .product-3d #toggle {
 /* Bootstrap overrides */
 .btn {
   border-radius: 0;
+}
+/* Yandex share */
+#social {
+  display: block;
+  margin: 10px auto 5px auto;
+  text-align: center;
 }
