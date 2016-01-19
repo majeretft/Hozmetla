@@ -20,5 +20,11 @@
       "src_js/objMtlLoader.js",
       "src_js/orbitControls.js"
     ]
+  },
+  {
+    "outputFileName": "js/site3d.js",
+    "inputFiles": [
+      "js/site3d.js"
+    ]
   }
 ]

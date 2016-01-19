@@ -308,16 +308,63 @@ main {
 		}
 
 		.product-3d {
+			position: relative;
+			min-height: 32px;
 			max-width: 600px;
 			margin-right: auto;
 			margin-left: auto;
+			border: 1px solid @product-decoration-color-2;
 
 			@media (min-width: @screen-md-min) {
 				max-width: 805px;
 			}
 
-			.embed-responsive-16by9 > iframe {
-				border: 1px solid darken(@text-contacts-decoration-color, 20%);
+			#load-wrapper {
+				display: table;
+
+				> div {
+					display: table-cell;
+					text-align: center;
+					vertical-align: middle;
+				}
+
+				#load {
+					font-size: 50px;
+					color: @product-decoration-color-2;
+					background-color: transparent;
+					border: none;
+
+					.glyphicon {
+						top: 4px;
+					}
+
+					&:hover {
+						color: @product-decoration-text-color-2;
+						background-color: transparent;
+						text-decoration: none;
+						-moz-transition: color linear 0.5s;
+						-o-transition: color linear 0.5s;
+						-webkit-transition: color linear 0.5s;
+						transition: color linear 0.5s;
+					}
+				}
+			}
+
+			#pause,
+			#toggle {
+				position: absolute;
+				top: 0;
+				color: @product-decoration-color-2;
+				background-color: transparent;
+				border: none;
+			}
+
+			#toggle {
+				left: 25px;
+
+				@media (min-width: @screen-sm-min) {
+					left: 110px;
+				}
 			}
 		}
 	}

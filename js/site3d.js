@@ -12,7 +12,10 @@ var App = function () {
 		'60x60_outer_pyramid': { obj: 'obj3d/60x60_outer_pyramid.obj', mtl: 'obj3d/60x60_cap.mtl' },
 		'60x60_outer_cap': { obj: 'obj3d/60x60_outer_cap.obj', mtl: 'obj3d/60x60_outer_cap.mtl' },
 		'60x60_inner_pyramid': { obj: 'obj3d/60x60_inner_pyramid.obj', mtl: 'obj3d/60x60_cap.mtl' },
-		'60x60_inner_new': { obj: 'obj3d/60x60_inner_new.obj', mtl: 'obj3d/60x60_cap.mtl' }
+		'60x60_inner_new': { obj: 'obj3d/60x60_inner_new.obj', mtl: 'obj3d/60x60_cap.mtl' },
+		'broom': { obj: 'obj3d/broom.obj', mtl: 'obj3d/broom.mtl' },
+		'brush': { obj: 'obj3d/brush.obj', mtl: 'obj3d/brush.mtl' },
+		'brush_w': { obj: 'obj3d/brush_w.obj', mtl: 'obj3d/brush_w.mtl' }
 	};
 
 	this.modelName = models[App.getQueryStringParam('obj')];
