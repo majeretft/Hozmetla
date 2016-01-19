@@ -11,5 +11,14 @@
     "inputFiles": [
       "js/site.js"
     ]
+  },
+  {
+    "outputFileName": "js/three-libs.js",
+    "inputFiles": [
+      "src_js/mtlLoader.js",
+      "src_js/objLoader.js",
+      "src_js/objMtlLoader.js",
+      "src_js/orbitControls.js"
+    ]
   }
 ]

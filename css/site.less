@@ -306,6 +306,20 @@ main {
 		.advantages {
 			color: @text-product-color;
 		}
+
+		.product-3d {
+			max-width: 600px;
+			margin-right: auto;
+			margin-left: auto;
+
+			@media (min-width: @screen-md-min) {
+				max-width: 805px;
+			}
+
+			.embed-responsive-16by9 > iframe {
+				border: 1px solid darken(@text-contacts-decoration-color, 20%);
+			}
+		}
 	}
 }
 

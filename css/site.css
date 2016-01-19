@@ -231,6 +231,19 @@ main .product-data .detail {
 main .product-data .advantages {
   color: #e6e6e6;
 }
+main .product-data .product-3d {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 992px) {
+  main .product-data .product-3d {
+    max-width: 805px;
+  }
+}
+main .product-data .product-3d .embed-responsive-16by9 > iframe {
+  border: 1px solid #84c509;
+}
 #photoes {
   margin-bottom: 5px;
 }
