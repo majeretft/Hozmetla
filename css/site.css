@@ -56,6 +56,11 @@ header .menu > li {
   margin-right: 15px;
   margin-bottom: 5px;
 }
+@media (min-width: 768px) {
+  header .menu > li {
+    display: inline-block;
+  }
+}
 header .menu > li > a {
   color: #B6F63E;
   text-transform: uppercase;
@@ -63,11 +68,6 @@ header .menu > li > a {
 }
 header .menu > li > a:hover {
   color: #E768AD;
-}
-@media (min-width: 768px) {
-  header .menu > li {
-    display: inline-block;
-  }
 }
 footer {
   margin-top: 2em;
@@ -91,11 +91,6 @@ footer .contacts-full .email,
 footer .contacts-full .phone {
   margin-bottom: 15px;
 }
-@media (min-width: 992px) {
-  footer .contacts {
-    padding-top: 30px;
-  }
-}
 main .product {
   position: relative;
   border: 1px solid #FCFF40;
@@ -107,6 +102,19 @@ main .product {
   margin-right: auto;
   margin-bottom: 1.5em;
   background-color: #612580;
+}
+@media (min-width: 992px) {
+  main .product {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main .product .product-photo {
+    float: left;
+  }
+  main .product .product-photo2 {
+    float: right;
+  }
 }
 main .product .product-details,
 main .product .product-details2 {
@@ -121,6 +129,29 @@ main .product .product-details2 h3 {
 main .product .product-details p,
 main .product .product-details2 p {
   color: #e6e6e6;
+}
+@media (min-width: 992px) {
+  main .product .product-details,
+  main .product .product-details2 {
+    height: 250px;
+    width: 440px;
+    display: table-cell;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  main .product .product-details h3,
+  main .product .product-details2 h3,
+  main .product .product-details p,
+  main .product .product-details2 p {
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+@media (min-width: 1200px) {
+  main .product .product-details,
+  main .product .product-details2 {
+    width: 640px;
+  }
 }
 main .product .product-button,
 main .product .product-button2 {
@@ -137,41 +168,9 @@ main .product .product-button2:hover {
   background-color: #FBFE00;
 }
 @media (min-width: 992px) {
-  main .product {
-    max-width: none;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  main .product .product-photo {
-    float: left;
-  }
-  main .product .product-photo2 {
-    float: right;
-  }
-  main .product .product-details,
-  main .product .product-details2 {
-    height: 250px;
-    width: 440px;
-    display: table-cell;
-    margin-bottom: 0;
-    vertical-align: middle;
-  }
-  main .product .product-details h3,
-  main .product .product-details2 h3,
-  main .product .product-details p,
-  main .product .product-details2 p {
-    text-align: center;
-    vertical-align: middle;
-  }
   main .product .product-button2 {
     right: auto;
     left: 0;
-  }
-}
-@media (min-width: 1200px) {
-  main .product .product-details,
-  main .product .product-details2 {
-    width: 640px;
   }
 }
 main .contacts-full {
@@ -195,11 +194,6 @@ main .contacts-full .address > p {
 main .contacts-full .email,
 main .contacts-full .phone {
   margin-bottom: 15px;
-}
-@media (min-width: 992px) {
-  main .contacts {
-    padding-top: 30px;
-  }
 }
 main .promo {
   margin-top: 20px;
@@ -249,6 +243,12 @@ main .product-data .advantages {
   max-width: 805px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
+}
+.photoes-carousel .carousel {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .photoes-carousel .photoes-thumbnails {
   max-width: 600px;
@@ -275,6 +275,13 @@ main .product-data .advantages {
   display: block;
   float: left;
   border: 2px solid #4A036F;
+  /*&:hover {
+				border: 2px solid @product-decoration-color-2;
+				-moz-transition: border-color linear 0.5s;
+				-o-transition: border-color linear 0.5s;
+				-webkit-transition: border-color linear 0.5s;
+				transition: border-color linear 0.5s;
+			}*/
 }
 @media (min-width: 992px) {
   .photoes-carousel .photoes-thumbnails > li {
@@ -296,13 +303,6 @@ main .product-data .advantages {
   -o-transition: opacity linear 0.5s;
   -webkit-transition: opacity linear 0.5s;
   transition: opacity linear 0.5s;
-}
-.photoes-carousel .photoes-thumbnails > li:hover {
-  border: 2px solid #FBFE00;
-  -moz-transition: border-color linear 0.5s;
-  -o-transition: border-color linear 0.5s;
-  -webkit-transition: border-color linear 0.5s;
-  transition: border-color linear 0.5s;
 }
 /* Bootstrap overrides */
 .btn {
