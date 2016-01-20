@@ -4,18 +4,14 @@ var viewCfg = {
 }
 
 var App = function () {
-	this._fovMin = 25;
-	this._fovMax = 50;
+	this._fovMin = 20;
+	this._fovMax = 60;
 	this.orbits = [];
 
 	var models = {
-		'60x60_outer_pyramid': { obj: 'obj3d/60x60_outer_pyramid.obj', mtl: 'obj3d/60x60_cap.mtl' },
-		'60x60_outer_cap': { obj: 'obj3d/60x60_outer_cap.obj', mtl: 'obj3d/60x60_outer_cap.mtl' },
-		'60x60_inner_pyramid': { obj: 'obj3d/60x60_inner_pyramid.obj', mtl: 'obj3d/60x60_cap.mtl' },
-		'60x60_inner_new': { obj: 'obj3d/60x60_inner_new.obj', mtl: 'obj3d/60x60_cap.mtl' },
-		'broom': { obj: 'obj3d/broom.obj', mtl: 'obj3d/broom.mtl' },
-		'brush': { obj: 'obj3d/brush.obj', mtl: 'obj3d/brush.mtl' },
-		'brush_w': { obj: 'obj3d/brush_w.obj', mtl: 'obj3d/brush_w.mtl' }
+		'broom': { obj: 'obj3d/broom.obj', mtl: 'obj3d/broom.mtl', scale: 0.085 },
+		'brush': { obj: 'obj3d/brush.obj', mtl: 'obj3d/brush.mtl', scale: 0.085 },
+		'brush_w': { obj: 'obj3d/brush_w.obj', mtl: 'obj3d/brush_w.mtl', scale: 0.085 }
 	};
 
 	this.modelName = models[App.getQueryStringParam('obj')];
@@ -132,8 +128,8 @@ App.prototype = {
 
 		var loader = new THREE.OBJMTLLoader();
 		loader.load(this.modelName.obj, this.modelName.mtl, function (mdl) {
-			mdl.scale.set(0.6, 0.6, 0.6);
-			mdl.position.y = -10;
+			mdl.scale.set(me.modelName.scale, me.modelName.scale, me.modelName.scale);
+			//mdl.position.y = -10;
 
 			me.scene.add(mdl);
 			me.obj3d = mdl;

@@ -262,7 +262,7 @@ main .product-data .product-3d #load-wrapper > div {
 main .product-data .product-3d #load-wrapper #load {
   font-size: 50px;
   color: #FBFE00;
-  background-color: #4A036F;
+  background-color: transparent;
   border: none;
 }
 main .product-data .product-3d #load-wrapper #load .glyphicon {

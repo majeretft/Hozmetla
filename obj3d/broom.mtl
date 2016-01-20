@@ -1,0 +1,66 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 20.01.2016 18:19:00
+
+newmtl handle_mat
+	Ns 80.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 0.9608 0.8902
+	Kd 1.0000 0.9608 0.8902
+	Ks 0.2000 0.1922 0.1780
+	Ke 0.0000 0.0000 0.0000
+	map_Ka broom_handle_texture.jpg
+	map_Kd broom_handle_texture.jpg
+	map_bump -bm 0.3000 broom_handle_bump.jpg
+	bump -bm 0.3000 broom_handle_bump.jpg
+
+newmtl cap_mat
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 0.9373 0.1373
+	Kd 1.0000 0.9373 0.1373
+	Ks 0.0780 0.0731 0.0107
+	Ke 0.0000 0.0000 0.0000
+
+newmtl handlecap_mat
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.2980 0.2980 0.2980
+	Kd 0.2980 0.2980 0.2980
+	Ks 0.0107 0.0107 0.0107
+	Ke 0.0000 0.0000 0.0000
+
+newmtl ring_mat
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.6471 0.6196 0.6000
+	Kd 0.6471 0.6196 0.6000
+	Ks 0.0505 0.0483 0.0468
+	Ke 0.0000 0.0000 0.0000
+
+newmtl fiber_mat
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.2863 0.6627 0.3294
+	Kd 0.2004 0.4639 0.2306
+	Ks 0.0014 0.0033 0.0016
+	Ke 0.0000 0.0000 0.0000
