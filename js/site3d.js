@@ -11,7 +11,7 @@ var App = function () {
 	var models = {
 		'broom': { obj: 'obj3d/broom.obj', mtl: 'obj3d/broom.mtl', scale: 0.085 },
 		'brush': { obj: 'obj3d/brush.obj', mtl: 'obj3d/brush.mtl', scale: 0.085 },
-		'brush_w': { obj: 'obj3d/brush_w.obj', mtl: 'obj3d/brush_w.mtl', scale: 0.085 }
+		'brush_w': { obj: 'obj3d/brush_w.obj', mtl: 'obj3d/brush_w.mtl', scale: 0.1 }
 	};
 
 	this.modelName = models[App.getQueryStringParam('obj')];
