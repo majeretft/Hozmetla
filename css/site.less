@@ -15,6 +15,7 @@
 
 @product-decoration-color: #FCFF40;
 @product-decoration-color-2: #FBFE00;
+@product-decoration-color-3: #BDBF30;
 @product-decoration-text-color: #860049;
 @product-decoration-text-color-2: #E768AD;
 @product-decoration-text-color-3: #C7F66F;
@@ -299,12 +300,35 @@ main {
 			}
 		}
 
-		.detail {
+		.detail,
+		.advantages {
+			background-color: @bg-product-color;
+			padding: 10px;
+			margin-bottom: 25px;
+			border: 1px solid @product-decoration-color-3;
 			color: @text-product-color;
+			
+			h3 {
+				color: @product-decoration-text-color-3;
+			}
+
+			h4 {
+				color: @text-product-color-hx;
+			}
+		}
+
+		.detail {
 		}
 
 		.advantages {
-			color: @text-product-color;
+			ul {
+				list-style: none;
+				padding-left: 0;
+
+				> li > p {
+					padding-left: 24px;
+				}
+			}
 		}
 
 		.product-3d {
@@ -316,6 +340,10 @@ main {
 			border: 1px solid @product-decoration-color-2;
 			background-image: url(../img/watermark.png);
 			background-repeat: repeat;
+
+			@media (max-width: @screen-sm-min) {
+				margin-left: 10%;
+			}
 
 			@media (max-width: @screen-md-min) {
 				background-size: 100px;
