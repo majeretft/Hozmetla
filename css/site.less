@@ -290,6 +290,8 @@ main {
 	}
 
 	.product-data {
+		color: @text-color-gray;
+
 		.caption {
 			margin-top: 0;
 			margin-bottom: 25px;
@@ -307,7 +309,7 @@ main {
 			margin-bottom: 25px;
 			border: 1px solid @product-decoration-color-3;
 			color: @text-product-color;
-			
+
 			h3 {
 				color: @product-decoration-text-color-3;
 			}
@@ -315,17 +317,9 @@ main {
 			h4 {
 				color: @text-product-color-hx;
 			}
-		}
 
-		.detail {
-		}
-
-		.advantages {
-			ul {
-				list-style: none;
-				padding-left: 0;
-
-				> li > p {
+			.advantage {
+				p {
 					padding-left: 24px;
 				}
 			}
@@ -337,6 +331,7 @@ main {
 			max-width: 600px;
 			margin-right: auto;
 			margin-left: auto;
+			margin-bottom: 25px;
 			border: 1px solid @product-decoration-color-2;
 			background-image: url(../img/watermark.png);
 			background-repeat: repeat;
