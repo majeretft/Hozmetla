@@ -317,6 +317,7 @@ main .product-data .product-3d #toggle {
   }
 }
 #photoes {
+  z-index: 1;
   margin-bottom: 5px;
 }
 @media (min-width: 992px) {
