@@ -26,8 +26,8 @@ newmtl handle_mat
 	Ke 0.0000 0.0000 0.0000
 	map_Ka brush_handle_texture.jpg
 	map_Kd brush_handle_texture.jpg
-	map_bump -bm 0.3000 broom_handle_bump.jpg
-	bump -bm 0.3000 broom_handle_bump.jpg
+	map_bump -bm 0.0500 broom_handle_bump.jpg
+	bump -bm 0.0500 broom_handle_bump.jpg
 
 newmtl filament_mat
 	Ns 5.0000

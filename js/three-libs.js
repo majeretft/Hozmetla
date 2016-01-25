@@ -127,6 +127,7 @@ THREE.MTLLoader.prototype = {
 		var sRes = /\x2Ds\s([\x2D\d\x2E\s]+)/i.exec(mapText);
 		var tRes = /\x2Dt\s([\x2D\d\x2E\s]+)/i.exec(mapText);
 		var texRes = /\x2Dtexres\s(\d+)/i.exec(mapText);
+		var bumpScale = /\x2Dbm\s([\d\x2E]+)/i.exec(mapText);
 		var tex = /(?:\s|^)([\w\x2D\x2E]*)$/.exec(mapText);
 
 		if (oRes && oRes[1] != null){
@@ -151,6 +152,7 @@ THREE.MTLLoader.prototype = {
 			t: tRes && tRes[1] != null ? tRes[1].split(delimiter_pattern, 3) : null,
 			texres: texRes && texRes[1] != null ? Number(texRes[1]) : null,
 			tex: tex ? tex[1] : null,
+			bumpScale: bumpScale != null && bumpScale.length > 1 ? bumpScale[1] : null
 		};
 	}
 
@@ -443,6 +445,10 @@ THREE.MTLLoader.MaterialCreator.prototype = {
 						var repeatX = value.s[0] || 1;
 						var repeatY = value.s[1] || 1;
 						params['bumpMap'].repeat = new THREE.Vector2(repeatX, repeatY);
+					}
+
+					if (value.bumpScale) {
+						params.bumpScale = +value.bumpScale;
 					}
 
 					break;
