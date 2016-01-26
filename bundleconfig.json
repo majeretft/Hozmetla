@@ -26,5 +26,11 @@
     "inputFiles": [
       "js/site3d.js"
     ]
+  },
+  {
+    "outputFileName": "css/bootstrap.css",
+    "inputFiles": [
+      "css/bootstrap.css"
+    ]
   }
 ]
