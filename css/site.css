@@ -1,4 +1,11 @@
 ﻿/* Link to color scheme "http://colorscheme.ru/#4I41Tw0w0w0w0" */
+@font-face {
+  font-family: 'social';
+  src: url('../fonts/social.eot?64222396');
+  src: url('../fonts/social.eot?64222396#iefix') format('embedded-opentype'), url('../fonts/social.woff?64222396') format('woff'), url('../fonts/social.ttf?64222396') format('truetype'), url('../fonts/social.svg?64222396#social') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background-color: #4A036F;
 }
@@ -398,8 +405,84 @@ main .product-data .product-3d #toggle {
   border-radius: 0;
 }
 /* Yandex share */
-#social {
-  display: block;
-  margin: 10px auto 5px auto;
+/*#social {
+	display: block;
+	margin: 5px auto 10px auto;
+	text-align: center;
+}
+
+.ya-share2__badge {
+	border: 2px solid @text-contacts-decoration-color !important;
+	border-radius: 100% !important;
+	margin-right: 5px !important;
+	background-color: @bg-header-color !important;
+}
+
+.ya-share2__container_size_m .ya-share2__icon {
+	width: 42px !important;
+	height: 42px !important;
+	background-size: 42px 42px !important;
+}*/
+#fontello-social {
   text-align: center;
+  margin-bottom: 10px;
+}
+#fontello-social ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+#fontello-social ul li {
+  display: inline-block;
+  margin-right: 25px;
+  width: 56px;
+  height: 56px;
+  padding: 8px;
+  border: 2px solid #00e0ff;
+  border-radius: 100%;
+}
+#fontello-social ul li .ya-share2__icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 social;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #00e0ff;
+  text-shadow: 1px 0 20px #00e0ff;
+}
+#fontello-social ul li a,
+#fontello-social ul li .ya-share2__badge,
+#fontello-social ul li .ya-share2__icon {
+  font-size: 28px;
+}
+#fontello-social ul li :hover {
+  text-decoration: none;
+  text-shadow: 1px 0 20px #99f3ff;
+}
+#fontello-social ul li .ya-share2__title {
+  display: none;
+}
+@media (max-width: 768px) {
+  #fontello-social ul li {
+    margin-bottom: 15px;
+  }
+}
+#fontello-social ul li[class$="vkontakte"] .ya-share2__icon:before {
+  content: '\e801';
+}
+#fontello-social ul li[class$="facebook"] .ya-share2__icon:before {
+  content: '\e804';
+}
+#fontello-social ul li[class$="odnoklassniki"] .ya-share2__icon:before {
+  content: '\e800';
+}
+#fontello-social ul li[class$="moimir"] .ya-share2__icon:before {
+  content: '\e802';
+}
+#fontello-social ul li[class$="gplus"] .ya-share2__icon:before {
+  content: '\e805';
+}
+#fontello-social ul li[class$="twitter"] .ya-share2__icon:before {
+  content: '\e803';
 }
