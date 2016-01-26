@@ -401,15 +401,17 @@ main .product-data .product-3d #toggle {
   white-space: nowrap;
 }
 .http404 {
-  margin-bottom: 25px;
+  margin-top: 32px;
+  margin-bottom: 75px;
 }
 .http404 h2 {
   color: #FCFF40;
+  margin-bottom: 45px;
 }
 .http404 small {
   color: #BDBF30;
 }
-.http404 p,
+.http404 h4,
 .http404 ul {
   color: #e6e6e6;
 }
