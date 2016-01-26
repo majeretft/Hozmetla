@@ -490,6 +490,70 @@ main {
 	white-space: nowrap;
 }
 
+.http404 {
+	margin-bottom: 25px;
+
+	h2 {
+		color: @text-product-color-hx;
+	}
+
+	small {
+		color: @product-decoration-color-3;
+	}
+
+	p,
+	ul {
+		color: @text-color-gray;
+	}
+}
+
+.product404 {
+	position: relative;
+	border: 1px solid @product-decoration-color;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.5em;
+	background-color: @bg-product-color;
+
+	.product-details,
+	.product-details2 {
+		margin-bottom: 10px;
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-bottom: @btn-height + 10px;
+
+		h3 {
+			color: @text-product-color-hx;
+		}
+
+		p {
+			color: @text-product-color;
+		}
+	}
+
+	.product-button,
+	.product-button2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		border-bottom: none;
+		color: @product-decoration-text-color;
+		border-color: @product-decoration-color;
+		background-color: @product-decoration-color;
+
+		&:hover {
+			background-color: @product-decoration-color-2;
+		}
+	}
+
+	@media (min-width: @screen-md-min) {
+		height: 240px;
+	}
+}
+
 /* Bootstrap overrides */
 .btn {
 	border-radius: 0;
@@ -558,6 +622,10 @@ main {
 			:hover {
 				text-decoration: none;
 				text-shadow: 1px 0 20px lighten(@text-shadow-color, 30%);
+				-moz-transition: text-shadow linear 0.5s;
+				-o-transition: text-shadow linear 0.5s;
+				-webkit-transition: text-shadow linear 0.5s;
+				transition: text-shadow linear 0.5s;
 			}
 
 			.ya-share2__title {

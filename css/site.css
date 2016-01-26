@@ -400,6 +400,64 @@ main .product-data .product-3d #toggle {
 .no-break {
   white-space: nowrap;
 }
+.http404 {
+  margin-bottom: 25px;
+}
+.http404 h2 {
+  color: #FCFF40;
+}
+.http404 small {
+  color: #BDBF30;
+}
+.http404 p,
+.http404 ul {
+  color: #e6e6e6;
+}
+.product404 {
+  position: relative;
+  border: 1px solid #FCFF40;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+  background-color: #612580;
+}
+.product404 .product-details,
+.product404 .product-details2 {
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 44px;
+}
+.product404 .product-details h3,
+.product404 .product-details2 h3 {
+  color: #FCFF40;
+}
+.product404 .product-details p,
+.product404 .product-details2 p {
+  color: #e6e6e6;
+}
+.product404 .product-button,
+.product404 .product-button2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: none;
+  color: #860049;
+  border-color: #FCFF40;
+  background-color: #FCFF40;
+}
+.product404 .product-button:hover,
+.product404 .product-button2:hover {
+  background-color: #FBFE00;
+}
+@media (min-width: 992px) {
+  .product404 {
+    height: 240px;
+  }
+}
 /* Bootstrap overrides */
 .btn {
   border-radius: 0;
@@ -459,6 +517,10 @@ main .product-data .product-3d #toggle {
 #fontello-social ul li :hover {
   text-decoration: none;
   text-shadow: 1px 0 20px #99f3ff;
+  -moz-transition: text-shadow linear 0.5s;
+  -o-transition: text-shadow linear 0.5s;
+  -webkit-transition: text-shadow linear 0.5s;
+  transition: text-shadow linear 0.5s;
 }
 #fontello-social ul li .ya-share2__title {
   display: none;
