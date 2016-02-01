@@ -410,7 +410,10 @@ main {
 #photoes {
 	// This is added to avoid chrome text rendering bug;
 	z-index: 1;
+	// ------------------------------------------------
+	
 	margin-bottom: 5px;
+	border: 1px solid @product-decoration-color-3;
 
 	@media (min-width: @screen-md-min) {
 		float: left;
@@ -427,6 +430,22 @@ main {
 		max-width: 600px;
 		margin-left: auto;
 		margin-right: auto;
+
+		.item-zoom-in {
+			position: absolute;
+			bottom: 5px;
+			right: 5px;
+			color: @product-decoration-color;
+			background-color: @bg-header-color;
+			border: 1px solid @product-decoration-color;
+			border-radius: 100%;
+			width: 40px;
+			height: 40px;
+			padding: 6px 0 0 8px;
+			font-size: 26px;
+			cursor: pointer;
+			overflow: hidden;
+		}
 	}
 
 	.photoes-thumbnails {
@@ -522,7 +541,6 @@ main {
 
 	.product-details,
 	.product-details2 {
-		margin-bottom: 10px;
 		padding-left: 5px;
 		padding-right: 5px;
 		margin-bottom: @btn-height + 10px;
@@ -553,6 +571,61 @@ main {
 
 	@media (min-width: @screen-md-min) {
 		height: 240px;
+	}
+}
+
+.modal-fs {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(125, 125, 125, 0.9);
+	z-index: 100;
+	display: table;
+
+	.close-fs,
+	.right-fs,
+	.left-fs {
+		position: absolute;
+		color: @product-decoration-color;
+		background-color: @bg-header-color;
+		border: 1px solid @product-decoration-color;
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+		font-size: 26px;
+		cursor: pointer;
+		z-index: 200;
+	}
+
+	.close-fs {
+		padding: 4px 0 0 6px;
+		top: 10px;
+		right: 10px;
+	}
+
+	.right-fs,
+	.left-fs {
+		top: 50%;
+		padding: 3px 0 0 5px;
+		margin-top: -20px;
+	}
+
+	.right-fs {
+		right: 15px;
+	}
+
+	.left-fs {
+		left: 15px;
+	}
+
+	.photo-fs {
+		width: 100%;
+		height: 100%;
+		display: table-cell;
+		vertical-align: middle;
+		padding: 25px;
 	}
 }
 

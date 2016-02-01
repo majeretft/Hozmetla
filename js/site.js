@@ -1,3 +1,7 @@
+var params = {
+	currentSlide: 0
+};
+
 var CarouselController = function (carousel, thumbnails) {
 	this._carousel = carousel;
 	this._thumbnails = thumbnails;
@@ -8,7 +12,7 @@ CarouselController.prototype = {
 
 	registerEvent: function () {
 		var me = this;
-		$(this._thumbnails).on("click", function (event) {
+		$(this._thumbnails).on('click', function (event) {
 			var targetSlide = $(event.currentTarget).attr('data-slide');
 			$(me._carousel).carousel(+targetSlide);
 
@@ -17,10 +21,13 @@ CarouselController.prototype = {
 				event.stopPropagation();
 		});
 
-		$(this._carousel).on("slide.bs.carousel", function (event) {
+		$(this._carousel).on('slide.bs.carousel', function (event) {
 			var nextSlide = $(event.relatedTarget).index();
-			$(me._thumbnails).removeClass("active");
-			$(me._thumbnails[nextSlide]).addClass("active");
+
+			params.currentSlide = nextSlide;
+
+			$(me._thumbnails).removeClass('active');
+			$(me._thumbnails[nextSlide]).addClass('active');
 		})
 	}
 };
@@ -116,15 +123,136 @@ ThreeController.prototype = {
 	}
 };
 
+var ControllerFs = function (controlShow, controleClose, container, onshow) {
+	this._controlShow = controlShow;
+	this._controleClose = controleClose;
+	this._container = container;
+	this._onshow = onshow;
+};
+
+ControllerFs.prototype = {
+	constructor: ControllerFs,
+
+	registerControls: function () {
+		var me = this;
+
+		$(this._controlShow).on('click', function (event) {
+			$(me._container).removeClass('hidden');
+			
+			if (me._onshow)
+				me._onshow();
+
+			event.preventDefault ? event.preventDefault() : event.returnValue = false;
+			if (event.stopPropagation)
+				event.stopPropagation();
+		});
+
+		$(this._controleClose).on('click', function (event) {
+			$(me._container).addClass('hidden');
+
+			event.preventDefault ? event.preventDefault() : event.returnValue = false;
+			if (event.stopPropagation)
+				event.stopPropagation();
+		});
+	}
+};
+
+var CarouselControllerFs = function (carousel, controlLeft, contolRight) {
+	this._carousel = carousel;
+	this._controlLeft = controlLeft;
+	this._contolRight = contolRight;
+}
+
+CarouselControllerFs.prototype = {
+	constructor: CarouselControllerFs,
+
+	initComplete: false,
+
+	disableCycles: function () {
+		this._carousel.carousel({ interval: false });
+	},
+
+	setctiveIndex: function (index) {
+		if (+index == null)
+			return;
+
+		$(this._carousel).carousel(index);
+	},
+
+	initPhotoes: function () {
+		$(this._carousel).find('img').attr('src', function () {
+			return $(this).attr('srcTarget');
+		});
+
+		this.initComplete = true;
+	},
+
+	registerControls: function () {
+		var me = this;
+
+		$(this._controlLeft).on('click', function (event) {
+			$(me._carousel).carousel('prev');
+
+			event.preventDefault ? event.preventDefault() : event.returnValue = false;
+			if (event.stopPropagation)
+				event.stopPropagation();
+		});
+
+		$(this._contolRight).on('click', function (event) {
+			$(me._carousel).carousel('next');
+
+			event.preventDefault ? event.preventDefault() : event.returnValue = false;
+			if (event.stopPropagation)
+				event.stopPropagation();
+		});
+	}
+};
+
 $(function () {
+	var carouselControllerFs;
+
 	var initCarouselControler = function () {
-		var carousel = $("#photoes")[0];
-		var thumbnails = $(".photoes-thumbnails > li");
+		var carousel = $('#photoes')[0];
+		var thumbnails = $('.photoes-thumbnails > li');
 		if (!carousel || thumbnails.length < 1)
 			return;
 
 		var carouselController = new CarouselController(carousel, thumbnails);
 		carouselController.registerEvent();
+	};
+
+	var initCarouselControllerFs = function () {
+		var carousel = $('#photoes-fs')[0];
+		var ctLeft = $('.left-fs')[0];
+		var ctRight = $('.right-fs')[0];
+
+		if (!carousel || !ctLeft || !ctRight)
+			return;
+
+		carouselControllerFs = new CarouselControllerFs(carousel, ctLeft, ctRight);
+		carouselControllerFs.registerControls();
+	};
+
+	var initControllerFs = function () {
+		var ctClose = $('.close-fs')[0];
+		var ctShow = $('.item-zoom-in')[0];
+		var ctCnt = $('.modal-fs')[0];
+
+		if (!ctClose || !ctShow || !ctCnt)
+			return;
+
+		var onshow = function () {
+			if (carouselControllerFs)
+				carouselControllerFs.setctiveIndex(params.currentSlide);
+
+			if (carouselControllerFs.initComplete)
+				return;
+
+			carouselControllerFs.initPhotoes();
+		};
+
+		var controllerFs = new ControllerFs(ctShow, ctClose, ctCnt, onshow);
+		controllerFs.registerControls();
 	};
 
 	var getGLState = function () {
@@ -166,4 +294,6 @@ $(function () {
 
 	initCarouselControler();
 	init3d();
+	initControllerFs();
+	initCarouselControllerFs();
 });
