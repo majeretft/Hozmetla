@@ -523,6 +523,11 @@ main .product-data .product-3d #toggle {
   vertical-align: middle;
   padding: 25px;
 }
+.product-caption {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #FBFE00;
+}
 /* Bootstrap overrides */
 .btn {
   border-radius: 0;
