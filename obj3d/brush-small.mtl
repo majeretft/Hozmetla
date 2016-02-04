@@ -1,5 +1,5 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 22.01.2016 12:14:53
+# File Created: 04.02.2016 15:21:14
 
 newmtl block_mat
 	Ns 41.0000
@@ -8,9 +8,9 @@ newmtl block_mat
 	Tr 0.0000
 	Tf 1.0000 1.0000 1.0000 
 	illum 2
-	Ka 0.2706 0.2706 0.2706
-	Kd 0.2706 0.2706 0.2706
-	Ks 0.2787 0.2787 0.2787
+	Ka 0.1373 0.1373 0.1373
+	Kd 0.1373 0.1373 0.1373
+	Ks 0.1947 0.1947 0.1947
 	Ke 0.0000 0.0000 0.0000
 
 newmtl handle_mat
@@ -24,8 +24,8 @@ newmtl handle_mat
 	Kd 1.0000 0.9608 0.8902
 	Ks 0.2000 0.1922 0.1780
 	Ke 0.0000 0.0000 0.0000
-	map_Ka brush_small_handle_texture.jpg
-	map_Kd brush_small_handle_texture.jpg
+	map_Ka broom_handle_texture.jpg
+	map_Kd broom_handle_texture.jpg
 	map_bump -bm 0.0500 broom_handle_bump.jpg
 	bump -bm 0.0500 broom_handle_bump.jpg
 
@@ -36,9 +36,9 @@ newmtl handlecap_mat
 	Tr 0.0000
 	Tf 1.0000 1.0000 1.0000 
 	illum 2
-	Ka 0.2980 0.2980 0.2980
-	Kd 0.2980 0.2980 0.2980
-	Ks 0.0107 0.0107 0.0107
+	Ka 0.1373 0.1373 0.1373
+	Kd 0.1373 0.1373 0.1373
+	Ks 0.0701 0.0701 0.0701
 	Ke 0.0000 0.0000 0.0000
 
 newmtl filament_mat
@@ -48,9 +48,9 @@ newmtl filament_mat
 	Tr 0.0000
 	Tf 1.0000 1.0000 1.0000 
 	illum 2
-	Ka 0.2157 0.7882 0.7020
-	Kd 0.2157 0.7882 0.7020
-	Ks 0.1024 0.1371 0.1318
+	Ka 0.7059 0.5059 0.2745
+	Kd 0.7059 0.5059 0.2745
+	Ks 0.1500 0.1500 0.1500
 	Ke 0.0000 0.0000 0.0000
 
 newmtl filament_mat2
@@ -60,7 +60,7 @@ newmtl filament_mat2
 	Tr 0.0000
 	Tf 1.0000 1.0000 1.0000 
 	illum 2
-	Ka 0.8353 0.8000 0.2353
-	Kd 0.8353 0.8000 0.2353
-	Ks 0.1400 0.1376 0.1041
+	Ka 1.0000 0.6980 0.6980
+	Kd 1.0000 0.6980 0.6980
+	Ks 0.1500 0.1500 0.1500
 	Ke 0.0000 0.0000 0.0000
