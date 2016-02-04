@@ -26,8 +26,9 @@ newmtl handle_mat
 	Ke 0.0000 0.0000 0.0000
 	map_Ka broom_handle_texture.jpg
 	map_Kd broom_handle_texture.jpg
-	map_bump -bm 0.0500 broom_handle_bump.jpg
-	bump -bm 0.0500 broom_handle_bump.jpg
+#	Fix invisible handle for C.H.
+#	map_bump -bm 0.0500 broom_handle_bump.jpg
+#	bump -bm 0.0500 broom_handle_bump.jpg
 
 newmtl filament_mat
 	Ns 5.0000
