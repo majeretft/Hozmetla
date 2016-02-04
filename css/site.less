@@ -423,13 +423,18 @@ main {
 				color: @product-decoration-color-2;
 				background-color: transparent;
 				border: none;
+				font-size: 1.65em;
+
+				@media (min-width: @screen-sm-min) {
+					font-size: 1.1em;
+				}
 			}
 
 			#toggle {
-				left: 25px;
+				left: 50px;
 
 				@media (min-width: @screen-sm-min) {
-					left: 110px;
+					left: 136px;
 				}
 			}
 		}

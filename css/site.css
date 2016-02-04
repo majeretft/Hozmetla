@@ -337,13 +337,20 @@ main .product-data .product-3d #toggle {
   color: #FBFE00;
   background-color: transparent;
   border: none;
+  font-size: 1.65em;
+}
+@media (min-width: 768px) {
+  main .product-data .product-3d #pause,
+  main .product-data .product-3d #toggle {
+    font-size: 1.1em;
+  }
 }
 main .product-data .product-3d #toggle {
-  left: 25px;
+  left: 50px;
 }
 @media (min-width: 768px) {
   main .product-data .product-3d #toggle {
-    left: 110px;
+    left: 136px;
   }
 }
 #photoes {
