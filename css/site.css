@@ -63,18 +63,41 @@ header .menu > li {
   margin-right: 15px;
   margin-bottom: 5px;
 }
+header .menu > li > a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+header .menu > li > a span {
+  color: #B6F63E;
+  display: inline-block;
+}
+header .menu > li > a .note {
+  margin-top: 5px;
+  color: #8f9486;
+  font-size: 0.75em;
+}
+header .menu > li > a:hover {
+  text-decoration: none;
+}
+header .menu > li > a:hover span {
+  color: #E768AD;
+}
+header .menu > li > a:hover .note {
+  color: #9b9b9b;
+}
+@media (min-width: 768px) {
+  header .menu > li > a span {
+    display: block;
+  }
+  header .menu > li > a span.glyphicon {
+    margin-bottom: 10px;
+  }
+}
 @media (min-width: 768px) {
   header .menu > li {
     display: inline-block;
   }
-}
-header .menu > li > a {
-  color: #B6F63E;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-header .menu > li > a:hover {
-  color: #E768AD;
 }
 footer {
   margin-top: 2em;

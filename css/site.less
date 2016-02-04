@@ -102,18 +102,47 @@ header {
 			margin-right: 15px;
 			margin-bottom: 5px;
 
-			@media (min-width: @screen-sm-min) {
-				display: inline-block;
-			}
-
 			> a {
-				color: @text-contacts-decoration-color;
-				text-transform: uppercase;
+				display: block;
 				text-decoration: none;
+				font-size: 1.1em;
+
+				span {
+					color: @text-contacts-decoration-color;
+					display: inline-block;
+				}
+
+				.note {
+					margin-top: 5px;
+					color: desaturate(darken(@text-contacts-decoration-color, 5%), 85%);
+					font-size: 0.75em;
+				}
 
 				&:hover {
-					color: @product-decoration-text-color-2;
+					text-decoration: none;
+
+					span {
+						color: @product-decoration-text-color-2;
+					}
+
+					.note {
+						color: desaturate(darken(@product-decoration-text-color-2, 5%), 85%);
+					}
 				}
+
+				@media (min-width: @screen-sm-min) {
+					span {
+						display: block;
+					}
+
+					span.glyphicon {
+						margin-bottom: 10px;
+					}
+				}
+			}
+
+			@media (min-width: @screen-sm-min) {
+				display: inline-block;
 			}
 		}
 	}
@@ -411,7 +440,6 @@ main {
 	// This is added to avoid chrome text rendering bug;
 	z-index: 1;
 	// ------------------------------------------------
-	
 	margin-bottom: 5px;
 	border: 1px solid @product-decoration-color-3;
 
