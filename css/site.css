@@ -251,32 +251,33 @@ main .product-data {
   color: #e6e6e6;
 }
 main .product-data .caption {
-  margin-top: 0;
-  margin-bottom: 25px;
-  color: #FCFF40;
+  margin-top: 1em;
+  margin-bottom: 1.65em;
 }
-main .product-data .caption small {
+main .product-data .caption span {
+  display: block;
+}
+main .product-data .caption span:first-child {
+  color: #FCFF40;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+main .product-data .caption span:last-child {
+  font-size: 0.5em;
   color: #cecf70;
 }
-main .product-data .detail,
-main .product-data .advantages {
+main .product-data .detail {
   background-color: #612580;
   padding: 10px;
   margin-bottom: 25px;
   border: 1px solid #BDBF30;
   color: #e6e6e6;
 }
-main .product-data .detail h3,
-main .product-data .advantages h3 {
+main .product-data .detail h3 {
   color: #C7F66F;
 }
-main .product-data .detail h4,
-main .product-data .advantages h4 {
+main .product-data .detail h4 {
   color: #FCFF40;
-}
-main .product-data .detail .advantage p,
-main .product-data .advantages .advantage p {
-  padding-left: 24px;
 }
 main .product-data .product-3d {
   position: relative;

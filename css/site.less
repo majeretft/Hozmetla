@@ -330,17 +330,26 @@ main {
 		color: @text-color-gray;
 
 		.caption {
-			margin-top: 0;
-			margin-bottom: 25px;
-			color: @text-product-color-hx;
+			margin-top: 1em;
+			margin-bottom: 1.65em;
 
-			small {
+			span {
+				display: block;
+			}
+
+			span:first-child {
+				color: @text-product-color-hx;
+				margin-bottom: 10px;
+				font-weight: bold;
+			}
+
+			span:last-child {
+				font-size: 0.5em;
 				color: desaturate(@text-product-color-hx, 50%);
 			}
 		}
 
-		.detail,
-		.advantages {
+		.detail {
 			background-color: @bg-product-color;
 			padding: 10px;
 			margin-bottom: 25px;
@@ -353,12 +362,6 @@ main {
 
 			h4 {
 				color: @text-product-color-hx;
-			}
-
-			.advantage {
-				p {
-					padding-left: 24px;
-				}
 			}
 		}
 
