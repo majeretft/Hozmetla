@@ -158,6 +158,18 @@ ControllerFs.prototype = {
 			if (event.stopPropagation)
 				event.stopPropagation();
 		});
+
+		$(document.body).keydown(function (event) {
+			if (event.keyCode == 27 && !$(me._container).hasClass('hidden')) {
+				$(me._container).addClass('hidden');
+			}
+		});
+
+		//$(this._container).children('.photo-fs').on('click', function (event) {
+		//	if (event.target == event.currentTarget && !$(me._container).hasClass('hidden')) {
+		//		$(me._container).addClass('hidden');
+		//	}
+		//});
 	}
 };
 
