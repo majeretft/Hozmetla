@@ -358,20 +358,17 @@ main .product-data .product-3d #toggle {
   z-index: 1;
   margin-bottom: 5px;
   border: 1px solid #BDBF30;
-}
-@media (min-width: 992px) {
-  #photoes {
-    float: left;
-  }
+  /*@media (min-width: @screen-md-min) {
+		float: left;
+	}*/
 }
 .photoes-carousel {
-  max-width: 805px;
+  max-width: 602px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
 }
 .photoes-carousel .carousel {
-  max-width: 600px;
+  max-width: 602px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -397,16 +394,13 @@ main .product-data .product-3d #toggle {
   padding: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
-}
-@media (min-width: 992px) {
-  .photoes-carousel .photoes-thumbnails {
-    float: left;
-    max-width: 194px;
-    width: auto;
-    margin-left: 5px;
-    margin-bottom: 0;
-  }
+  /*@media (min-width: @screen-md-min) {
+			float: left;
+			max-width: 194px;
+			width: auto;
+			margin-left: 5px;
+			margin-bottom: 0;
+		}*/
 }
 .photoes-carousel .photoes-thumbnails > li {
   padding: 1px;
@@ -414,7 +408,12 @@ main .product-data .product-3d #toggle {
   width: 33.3333333333%;
   display: block;
   float: left;
-  border: 2px solid #4A036F;
+  border: 2px solid #612580;
+  /*@media (min-width: @screen-md-min) {
+				float: none;
+				max-width: 100%;
+				width: auto;
+			}*/
   /*&:hover {
 				border: 2px solid @product-decoration-color-2;
 				-moz-transition: border-color linear 0.5s;
@@ -422,13 +421,6 @@ main .product-data .product-3d #toggle {
 				-webkit-transition: border-color linear 0.5s;
 				transition: border-color linear 0.5s;
 			}*/
-}
-@media (min-width: 992px) {
-  .photoes-carousel .photoes-thumbnails > li {
-    float: none;
-    max-width: 100%;
-    width: auto;
-  }
 }
 .photoes-carousel .photoes-thumbnails > li.active {
   border: 2px solid #FBFE00;

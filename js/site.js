@@ -298,14 +298,14 @@ $(function () {
 	};
 
 	var init3d = function () {
-		if (!getGLState())
+		if (!getGLState() || uri3d == null)
 			return;
 
 		var product3d = $('.product-3d')[0];
 		var frameCnt = $(product3d)
 			.children('.embed-responsive')
 			.first()
-			.prepend('<iframe id="frame3d" src="about:blank" srcTarget="view360.html?obj=brush-small&v=0.6" class="embed-responsive-item"></iframe>');
+			.prepend('<iframe id="frame3d" src="about:blank" srcTarget="' + uri3d + '" class="embed-responsive-item"></iframe>');
 
 		$(product3d).removeClass('hidden');
 
