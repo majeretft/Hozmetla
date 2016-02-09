@@ -1,4 +1,3 @@
 User-agent: *
 Disallow: /errors
 Disallow: /http404.html
-Disallow: /
