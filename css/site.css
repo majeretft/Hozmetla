@@ -155,10 +155,25 @@ main .product .product-details2 {
 main .product .product-details h3,
 main .product .product-details2 h3 {
   color: #FCFF40;
+  margin-top: 0;
 }
 main .product .product-details p,
 main .product .product-details2 p {
   color: #e6e6e6;
+}
+main .product .product-details .product-cost,
+main .product .product-details2 .product-cost {
+  margin: 15px 0 15px 0;
+  text-align: center;
+}
+main .product .product-details .product-cost span,
+main .product .product-details2 .product-cost span {
+  color: #C7F66F;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #C7F66F;
+  background-color: #383838;
+  font-size: 1.3em;
 }
 @media (min-width: 992px) {
   main .product .product-details,
