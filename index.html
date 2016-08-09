@@ -172,7 +172,8 @@
 				</div>
 			</article>
 		</div>
-		<div class="contacts-full">
+		<div class="contacts-full" itemscope itemtype="http://schema.org/LocalBusiness">
+			<meta itemprop="name" content="Центр ВТО">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
@@ -187,20 +188,30 @@
 					<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
 						<div class="email">
 							<h4 class="text-center"><span class="glyphicon glyphicon-envelope"></span> EMail</h4>
-							<p class="text-center">sales@hozmetla.ru</p>
+							<p class="text-center" itemprop="email">sales@hozmetla.ru</p>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
 						<div class="phone">
 							<h4 class="text-center"><span class="glyphicon glyphicon-phone-alt"></span> Телефон</h4>
-							<p class="text-center">+7 (491) 295-06-43</p>
+							<p class="text-center" itemprop="telephone">+7 (491) 295-06-43</p>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-						<div class="address">
+						<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 							<h4 class="text-center"><span class="glyphicon glyphicon-map-marker"></span> Адрес</h4>
-							<p class="text-center">390000 Россия, <span class="no-break">Рязанская обл.,</span> <span class="no-break">г. Рязань,</span> <span class="no-break">Ряжское шоссе,</span> <span class="no-break">д. 20</span></p>
-							<p class="text-center">Территория завода химического волокна</p>
+							<p class="text-center">
+								<span itemprop="postalCode">390000</span>
+								<span itemprop="addressCountry">Россия</span>,
+								<span class="no-break" itemprop="addressRegion">Рязанская обл.</span>,
+								<span class="no-break" itemprop="addressLocality">г. Рязань</span>,
+								<span itemprop="streetAddress">
+									<span class="no-break">Ряжское шоссе</span>,
+									<span class="no-break">д. 20</span>
+								</span>
+							</p>
+							<p class="text-center" itemprop="location">Территория завода химического волокна</p>
+							<p class="text-center" itemprop="openingHours" content="Mo, Tu, We, Th, Fr 8:00-17:00">Мы работам с 8:00 до 17:00 по Московскому времени.</p>
 						</div>
 					</div>
 				</div>
