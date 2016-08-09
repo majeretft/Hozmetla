@@ -429,9 +429,6 @@ main .product-data .product-3d #toggle {
   -webkit-transition: opacity linear 0.5s;
   transition: opacity linear 0.5s;
 }
-.no-break {
-  white-space: nowrap;
-}
 .http404 {
   margin-top: 32px;
   margin-bottom: 75px;
