@@ -373,9 +373,6 @@ main .product-data .product-3d #toggle {
   z-index: 1;
   margin-bottom: 5px;
   border: 1px solid #BDBF30;
-  /*@media (min-width: @screen-md-min) {
-		float: left;
-	}*/
 }
 .photoes-carousel {
   max-width: 602px;
@@ -409,13 +406,6 @@ main .product-data .product-3d #toggle {
   padding: 0;
   margin-left: auto;
   margin-right: auto;
-  /*@media (min-width: @screen-md-min) {
-			float: left;
-			max-width: 194px;
-			width: auto;
-			margin-left: 5px;
-			margin-bottom: 0;
-		}*/
 }
 .photoes-carousel .photoes-thumbnails > li {
   padding: 1px;
@@ -424,18 +414,6 @@ main .product-data .product-3d #toggle {
   display: block;
   float: left;
   border: 2px solid #612580;
-  /*@media (min-width: @screen-md-min) {
-				float: none;
-				max-width: 100%;
-				width: auto;
-			}*/
-  /*&:hover {
-				border: 2px solid @product-decoration-color-2;
-				-moz-transition: border-color linear 0.5s;
-				-o-transition: border-color linear 0.5s;
-				-webkit-transition: border-color linear 0.5s;
-				transition: border-color linear 0.5s;
-			}*/
 }
 .photoes-carousel .photoes-thumbnails > li.active {
   border: 2px solid #FBFE00;
@@ -570,25 +548,6 @@ main .product-data .product-3d #toggle {
 .btn {
   border-radius: 0;
 }
-/* Yandex share */
-/*#social {
-	display: block;
-	margin: 5px auto 10px auto;
-	text-align: center;
-}
-
-.ya-share2__badge {
-	border: 2px solid @text-contacts-decoration-color !important;
-	border-radius: 100% !important;
-	margin-right: 5px !important;
-	background-color: @bg-header-color !important;
-}
-
-.ya-share2__container_size_m .ya-share2__icon {
-	width: 42px !important;
-	height: 42px !important;
-	background-size: 42px 42px !important;
-}*/
 #fontello-social {
   text-align: center;
   margin-bottom: 10px;
@@ -601,11 +560,9 @@ main .product-data .product-3d #toggle {
 #fontello-social ul li {
   display: inline-block;
   margin-right: 25px;
-  width: 56px;
-  height: 56px;
+  width: 46px;
+  height: 46px;
   padding: 8px;
-  border: 2px solid #00e0ff;
-  border-radius: 100%;
 }
 #fontello-social ul li .ya-share2__icon {
   display: inline-block;
@@ -620,7 +577,7 @@ main .product-data .product-3d #toggle {
 #fontello-social ul li a,
 #fontello-social ul li .ya-share2__badge,
 #fontello-social ul li .ya-share2__icon {
-  font-size: 28px;
+  font-size: 22px;
 }
 #fontello-social ul li :hover {
   text-decoration: none;
