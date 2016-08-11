@@ -51,21 +51,26 @@ header .contacts {
     width: auto;
     margin-top: 6px;
     margin-bottom: 6px;
-    border: 1px solid #cbffce;
+    border: 1px solid #006506;
     border-left: none;
     border-right: none;
   }
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #d4d4d4;
+  border-left: 1px solid #006506;
+  border-right: 1px solid #006506;
+  transition: all ease-in-out 0.1s;
 }
-.navbar-nav {
-  float: none;
-  text-align: center;
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: #006506;
 }
-.nav > li {
-  float: none;
-  display: inline-block;
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: none;
+    margin: 0 auto;
+    width: 695px;
+  }
 }
 @font-face {
   font-family: 'social';
@@ -143,11 +148,28 @@ header .contacts {
   background-color: #fff0cb;
   margin-bottom: 20px;
   position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.product:hover,
+.product:visited,
+.product:focus {
+  text-decoration: none;
+  color: inherit;
 }
 @media (min-width: 768px) {
   .product {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .product {
+    transition: all ease-in-out 0.1s;
+  }
+  .product:hover {
+    transform: scale(1.02);
   }
 }
 .product img {
@@ -195,7 +217,7 @@ header .contacts {
     width: 638px;
   }
 }
-.product a.btn {
+.product div.btn {
   display: block;
   border-radius: 0;
   background-color: #337ab7;
@@ -203,17 +225,17 @@ header .contacts {
   margin-left: -15px;
   margin-right: -15px;
 }
-.product a.btn:hover,
-.product a.btn:focus,
-.product a.btn:visited {
+.product div.btn:hover,
+.product div.btn:focus,
+.product div.btn:visited {
   color: #fff;
   text-decoration: none;
 }
-.product a.btn:hover {
+.product div.btn:hover {
   background-color: #285f8f;
 }
 @media (min-width: 992px) {
-  .product a.btn {
+  .product div.btn {
     position: absolute;
     margin: 0;
     right: 0;
@@ -232,7 +254,7 @@ header .contacts {
   }
 }
 @media (min-width: 992px) {
-  .product.inverse a.btn {
+  .product.inverse div.btn {
     position: absolute;
     left: 0;
     right: auto;

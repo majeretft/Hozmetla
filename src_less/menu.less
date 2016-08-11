@@ -14,7 +14,7 @@
 		width: auto;
 		margin-top: 6px;
 		margin-bottom: 6px;
-		border: 1px solid #cbffce;
+		border: 1px solid darken(#cbffce, 70%);
 		border-left: none;
 		border-right: none;
 	}
@@ -22,14 +22,19 @@
 
 .navbar-inverse .navbar-nav > li > a {
 	color: @header-text-color;
+	border-left: 1px solid darken(#cbffce, 70%);
+	border-right: 1px solid darken(#cbffce, 70%);
+	transition: all ease-in-out 0.1s;
+
+	&:hover {
+		background-color: darken(#cbffce, 70%);
+	}
 }
 
-.navbar-nav {
-	float: none;
-	text-align: center;
-}
-
-.nav > li {
-	float: none;
-	display: inline-block;
+@media(min-width: @screen-sm-min) {
+	.navbar-nav {
+		float: none;
+		margin: 0 auto;
+		width: 695px;
+	}
 }

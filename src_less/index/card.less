@@ -9,10 +9,26 @@
 	background-color: @bg-color;
 	margin-bottom: 20px;
 	position: relative;
+	display: block;
+	text-decoration: none;
+	color: inherit;
+
+	&:hover, &:visited, &:focus {
+		text-decoration: none;
+		color: inherit;
+	}
 
 	@media(min-width: @screen-sm-min) {
 		margin-left: 0;
 		margin-right: 0;
+	}
+
+	@media(min-width: @screen-md-min) {
+		transition: all ease-in-out 0.1s;
+		
+		&:hover {
+			transform: scale(1.02);
+		}
 	}
 
 	img {
@@ -63,7 +79,7 @@
 		}
 	}
 
-	a.btn {
+	div.btn {
 		display: block;
 		border-radius: 0;
 		background-color: @bs-primary-bg-color;
@@ -102,7 +118,7 @@
 			}
 		}
 
-		a.btn {
+		div.btn {
 			@media(min-width: @screen-md-min) {
 				position: absolute;
 				left: 0;
