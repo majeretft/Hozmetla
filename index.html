@@ -50,170 +50,148 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico?v=1.0" />
 
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
-	<link href="css/site.min.css?v=1.0" rel="stylesheet" />
+	<link href="css/index.min.css?v=1.0" rel="stylesheet" />
 
 	<!--[if lt IE 9]>
-	<script src="js/ie.min.js?v=1.0"></script>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
 	<![endif]-->
+
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Центр ВТО",
+			"email": "sales@hozmetla.ru",
+			"telephone": "+7 (491) 295-06-43",
+			"openingHours": "Mo, Tu, We, Th, Fr 8:00-17:00",
+			"address": {
+				"@type": "PostalAddress",
+				"postalCode": "390000",
+				"addressCountry": "Россия",
+				"addressRegion": "Рязанская область",
+				"addressLocality": "Рязань",
+				"streetAddress": "Ряжское шоссе, строение 20"
+			}
+		}
+	</script>
+
 </head>
 <body>
 
 
 	<header>
 		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<p class="about header-text text-center">
-						<i>Производство и продажа уборочного инвентаря (круглая метла, плоская метла, щетка гардена) из пластика. Все изделия обладают прочным, износостойким и упругим ворсом. У нас Вы можете купить качественную продукцию с доставкой по всей России.</i>
-					</p>
-				</div>
+			<p class="about">
+				Производство и продажа уборочного инвентаря (круглая метла, плоская метла, щетка гардена) из пластика.
+				Все изделия обладают прочным, износостойким и упругим ворсом.
+				У нас Вы можете купить качественную продукцию с доставкой по всей России.
+			</p>
+			<div class="contacts">
+				<a href="mailto:sales@hozmetla.ru"><span class="glyphicon glyphicon-envelope"></span> sales@hozmetla.ru</a>
+				<span class="hidden-xs">|</span>
+				<br class="visible-xs" />
+				<a href="callto:74912950643"><span class="glyphicon glyphicon-phone-alt"></span> +7 (491) 295-06-43</a>
 			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<p class="contacts text-center">
-						<a href="mailto:sales@hozmetla.ru"><span class="glyphicon glyphicon-envelope"></span> sales@hozmetla.ru</a>
-						<span class="hidden-xs">|</span>
-						<br class="visible-xs" />
-						<a href="callto:74912950643"><span class="glyphicon glyphicon-phone-alt"></span> +7 (491) 295-06-43</a>
-					</p>
+		</div>
+		<nav class="navbar navbar-inverse navbar-static-top" id="menu">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-inner">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 				</div>
-			</div>
-			<nav class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<ul class="menu text-center">
-						<li>
-							<a href="/">
-								<span class="glyphicon glyphicon-home"></span>
-								<span class="note">ДОМАШНЯЯ</span>
-							</a>
-						</li>
-						<li>
-							<a href="metla.html">
-								<span>PRIMA</span>
-								<span class="note">МЕТЛА</span>
-							</a>
-						</li>
-						<li>
-							<a href="shchetka-gerda.html">
-								<span>GERDA</span>
-								<span class="note">ЩЕТКА</span>
-							</a>
-						</li>
-						<li>
-							<a href="shchetka-gardena.html">
-								<span>GARDENA LUX</span>
-								<span class="note">ПЛОСКАЯ МЕТЛА</span>
-							</a>
-						</li>
+				<div class="collapse navbar-collapse" id="menu-inner">
+					<ul class="nav navbar-nav">
+						<li><a href="/">Домашняя</a></li>
+						<li><a href="metla.html">Круглая метла PRIMA</a></li>
+						<li><a href="shchetka-gerda.html">Плоская метла GERDA</a></li>
+						<li><a href="shchetka-gardena.html">Плоская метла GARDENA LUX</a></li>
+						<li class="visible-xs"><a href="#contacts">Контакты</a></li>
 					</ul>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
 	</header>
 
 
 	<main>
 		<div class="container">
-			<article class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<div class="product clearfix">
-						<div class="product-photo">
-							<img src="img/index-broom.jpg" alt="метла prima" class="img-responsive" />
-						</div>
-						<div class="product-details">
-							<h3 class="text-center">КРУГЛАЯ МЕТЛА <span class="product-caption">PRIMA</span></h3>
-							<div class="product-cost"><span>от 85руб/шт</span></div>
-							<p class="text-center">
-								Проверенный временем и наиболее распространенный инструмент для уборки.
-								Полипропиленовая метла очень удобна для использования на открытом пространстве.
-								Изделие представляет собой классическую метлу в современном исполнении.
-							</p>
-						</div>
-						<a href="metla.html" class="product-button btn btn-default">
-							<span class="glyphicon glyphicon-ok"></span> Круглая метла PRIMA
-						</a>
-					</div>
-				</div>
-			</article>
-			<article class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<div class="product clearfix">
-						<div class="product-photo2">
-							<img src="img/index-brush.jpg" alt="щетка gerda" class="img-responsive" />
-						</div>
-						<div class="product-details2">
-							<h3 class="text-center">УНИВЕРСАЛЬНАЯ МЕТЛА <span class="product-caption">GERDA</span></h3>
-							<div class="product-cost"><span>от 72руб/шт</span></div>
-							<p class="text-center">
-								Новинка в мире уборочного инвентаря.
-								Щетка GERDA является наиболее универсальным инструментом для уборки как в помещении, так и на улице.
-								Изделие обладает отличными эксплуатационными характеристиками и позволяет выполнить качественную уборку в труднодоступных местах.
-							</p>
-						</div>
-						<a href="shchetka-gerda.html" class="product-button2 btn btn-default"><span class="glyphicon glyphicon-ok"></span> Плоская метла GERDA</a>
-					</div>
-				</div>
-			</article>
-			<article class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<div class="product clearfix">
-						<div class="product-photo">
-							<img src="img/index-brush-wide.jpg" alt="щетка gardena lux" class="img-responsive" />
-						</div>
-						<div class="product-details">
-							<h3 class="text-center">ПЛОСКАЯ МЕТЛА <span class="product-caption">GARDENA LUX</span></h3>
-							<div class="product-cost"><span>от 70руб/шт</span></div>
-							<p class="text-center">
-								Данный инструмент расширяет возможности применения круглой метлы и обладает улучшенными эксплуатационными характеристиками.
-								Щетка гардена удобна для использования на открытом пространстве.
-								Эта плоская метла позволяет выполнить качественную уборку обширной территории.
-							</p>
-						</div>
-						<a href="shchetka-gardena.html" class="product-button btn btn-default"><span class="glyphicon glyphicon-ok"></span> Плоская метла GARDENA LUX</a>
-					</div>
-				</div>
-			</article>
+			<div class="page-header">
+				<h1 class="text-center">Производство круглых и плоских метел</h1>
+			</div>
 		</div>
-		<div class="contacts-full" itemscope itemtype="http://schema.org/LocalBusiness">
-			<meta itemprop="name" content="Центр ВТО">
+		<article class="container">
+			<div class="product clearfix">
+				<img src="img/index-broom.jpg" alt="метла prima" class="img-responsive" />
+				<div class="product-details">
+					<h2>круглая метла <span class="product-caption">prima</span></h2>
+					<div class="product-cost"><span>от 85руб/шт</span></div>
+					<p>
+						Проверенный временем и наиболее распространенный инструмент для уборки.
+						Полипропиленовая метла очень удобна для использования на открытом пространстве.
+						Изделие представляет собой классическую метлу в современном исполнении.
+					</p>
+					<a href="metla.html" class="btn">Круглая метла PRIMA</a>
+				</div>
+			</div>
+			<div class="product inverse clearfix">
+				<img src="img/index-brush.jpg" alt="щетка gerda" class="img-responsive" />
+				<div class="product-details">
+					<h2>универсальная метла <span class="product-caption">gerda</span></h2>
+					<div class="product-cost"><span>от 72руб/шт</span></div>
+					<p>
+						Новинка в мире уборочного инвентаря.
+						Щетка GERDA является наиболее универсальным инструментом для уборки как в помещении, так и на улице.
+						Изделие обладает отличными эксплуатационными характеристиками и позволяет выполнить качественную уборку в труднодоступных местах.
+					</p>
+					<a href="shchetka-gerda.html" class="btn">Плоская метла GERDA</a>
+				</div>
+			</div>
+			<div class="product clearfix">
+				<img src="img/index-brush-wide.jpg" alt="щетка gardena lux" class="img-responsive" />
+				<div class="product-details">
+					<h2>ПЛОСКАЯ МЕТЛА <span class="product-caption">GARDENA LUX</span></h2>
+					<div class="product-cost"><span>от 70руб/шт</span></div>
+					<p>
+						Данный инструмент расширяет возможности применения круглой метлы и обладает улучшенными эксплуатационными характеристиками.
+						Щетка гардена удобна для использования на открытом пространстве.
+						Эта плоская метла позволяет выполнить качественную уборку обширной территории.
+					</p>
+					<a href="shchetka-gardena.html" class="btn">Плоская метла GARDENA LUX</a>
+				</div>
+			</div>
+		</article>
+		<div id="contacts">
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-						<div class="embed-responsive embed-responsive-16by9">
-							<div class="embed-responsive-item">
-								<!--noindex-->
-								<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=_arpLO4PE819A1YjFE9m3U46OvMaJ1Kv&width=100%25&height=100%25&lang=ru_RU&sourceType=constructor"></script>
-								<!--/noindex-->
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
-						<div class="email">
-							<h4 class="text-center"><span class="glyphicon glyphicon-envelope"></span> EMail</h4>
-							<p class="text-center" itemprop="email">sales@hozmetla.ru</p>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
-						<div class="phone">
-							<h4 class="text-center"><span class="glyphicon glyphicon-phone-alt"></span> Телефон</h4>
-							<p class="text-center" itemprop="telephone">+7 (491) 295-06-43</p>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-						<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-							<h4 class="text-center"><span class="glyphicon glyphicon-map-marker"></span> Адрес</h4>
-							<p class="text-center">
-								<span itemprop="postalCode">390000</span>
-								<span itemprop="addressCountry">Россия</span>,
-								<span class="text-nowrap" itemprop="addressRegion">Рязанская обл.</span>,
-								<span class="text-nowrap" itemprop="addressLocality">г. Рязань</span>,
-								<span itemprop="streetAddress">
-									<span class="text-nowrap">Ряжское шоссе</span>,
-									<span class="text-nowrap">д. 20</span>
-								</span>
-							</p>
-							<p class="text-center" itemprop="location">Территория завода химического волокна</p>
-							<p class="text-center" itemprop="openingHours" content="Mo, Tu, We, Th, Fr 8:00-17:00">Мы работам с 8:00 до 17:00 по Московскому времени.</p>
+				<div class="text-wrap">
+					<p>
+						<span class="glyphicon glyphicon-envelope"></span> sales@hozmetla.ru
+					</p>
+					<p>
+						<span class="glyphicon glyphicon-phone-alt"></span> +7 (491) 295-06-43
+					</p>
+					<p>
+						<span class="glyphicon glyphicon-map-marker"></span>
+						390000 Россия,
+						<span class="text-nowrap">Рязанская обл.</span>,
+						<span class="text-nowrap">г. Рязань</span>,
+						<span class="text-nowrap">Ряжское шоссе, д. 20</span>
+					</p>
+					<p>
+						Территория завода химического волокна.
+						<br/>
+						Мы работам с 8:00 до 17:00 по Московскому времени.
+					</p>
+				</div>
+				<div class="map-wrap">
+					<div class="embed-responsive embed-responsive-16by9">
+						<div class="embed-responsive-item">
+							<!--noindex-->
+							<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=_arpLO4PE819A1YjFE9m3U46OvMaJ1Kv&width=100%25&height=100%25&lang=ru_RU&sourceType=constructor"></script>
+							<!--/noindex-->
 						</div>
 					</div>
 				</div>
@@ -221,70 +199,54 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-1 col-md-4 col-lg-offset-0 col-lg-3">
-					<div class="promo text-center">
-						<div>
+				<div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-lg-offset-0 col-lg-3">
+					<div class="promo">
+						<div class="glyph">
 							<span class="glyphicon glyphicon-ok"></span>
 						</div>
-						<h4>
-							<i>Удобно</i>
-						</h4>
-						<p class="text-center">
-							<b>
-								Быстрая сборка заказа и оперативная отгрузка продукции.<br />
-								Отправка транспортной компанией по выбору заказчика.<br />
-								Продажа в любых количествах, в т.ч. поштучно.
-							</b>
+						<p class="cap">Удобно</p>
+						<p class="txt">
+							Быстрая сборка заказа и оперативная отгрузка продукции.<br />
+							Отправка транспортной компанией по выбору заказчика.<br />
+							Продажа в любых количествах, в т.ч. поштучно.
 						</p>
 					</div>
 				</div>
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-2 col-md-4 col-lg-offset-0 col-lg-3">
-					<div class="promo text-center">
-						<div>
+				<div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4 col-lg-offset-0 col-lg-3">
+					<div class="promo">
+						<div class="glyph">
 							<span class="glyphicon glyphicon-heart"></span>
 						</div>
-						<h4>
-							<i>Надежно</i>
-						</h4>
-						<p class="text-center">
-							<b>
-								Гарантия стабильного качества продукции.<br />
-								Индивидуальный подход к клиенту.<br />
-								Собственные складские помещения гарантируют наличие крупных объемов продукции.
-							</b>
+						<p class="cap">Надежно</p>
+						<p class="txt">
+							Гарантия стабильного качества продукции.<br/>
+							Индивидуальный подход к клиенту.<br/>
+							Собственные складские помещения гарантируют наличие крупных объемов продукции.
 						</p>
 					</div>
 				</div>
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-1 col-md-4 col-lg-offset-0 col-lg-3">
-					<div class="promo text-center">
-						<div>
+				<div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-lg-offset-0 col-lg-3">
+					<div class="promo">
+						<div class="glyph">
 							<span class="glyphicon glyphicon-gift"></span>
 						</div>
-						<h4>
-							<i>Выгодно</i>
-						</h4>
-						<p class="text-center">
-							<b>
-								Гарантия справедливых цен за счет полного цикла производства, позволяющего снизить конечную себестоимость на каждом этапе.<br />
-								Доставка до терминала ТК бесплатно.<br /><br /><br />
-							</b>
+						<p class="cap">Выгодно</p>
+						<p class="txt">
+							Гарантия справедливых цен за счет полного цикла производства, позволяющего снизить конечную себестоимость на каждом этапе.<br />
+							Доставка до терминала ТК бесплатно.
 						</p>
 					</div>
 				</div>
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-2 col-md-4 col-lg-offset-0 col-lg-3">
-					<div class="promo text-center">
-						<div>
+				<div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4 col-lg-offset-0 col-lg-3">
+					<div class="promo">
+						<div class="glyph">
 							<span class="glyphicon glyphicon-thumbs-up"></span>
 						</div>
-						<h4>
-							<i>Качественно</i>
-						</h4>
-						<p class="text-center">
-							<b>
-								Только качественное сырье.<br />
-								Контроль на каждом этапе производства.<br />
-								Изготовление на современном высокотехнологичном оборудовании.
-							</b>
+						<p class="cap">Качественно</p>
+						<p class="txt">
+							Только качественное сырье.<br />
+							Контроль на каждом этапе производства.<br />
+							Изготовление на современном высокотехнологичном оборудовании.
 						</p>
 					</div>
 				</div>
@@ -295,34 +257,25 @@
 
 	<footer>
 		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<p class="about text-justify">
-						<i>
-							Компания &laquo;Центр ВТО&raquo; основана в 1997 году.
-							Наша миссия - выпуск качественных и недорогих изделий для широкого круга покупателей.
-							Мы постоянно совершенствуем технологический процесс.
-							Мы используем самые современные разработки в области изготовления щеток.
-						</i>
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<div id="fontello-social" class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter" data-bare></div>
-				</div>
-			</div>
+			<p class="about text-justify">
+				<i>
+					Компания &laquo;Центр ВТО&raquo; основана в 1997 году.
+					Наша миссия - выпуск качественных и недорогих изделий для широкого круга покупателей.
+					Мы постоянно совершенствуем технологический процесс.
+					Мы используем самые современные разработки в области изготовления щеток.
+				</i>
+			</p>
+			<div class="ya-share2 social" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter" data-bare></div>
 		</div>
 	</footer>
 
-	<script src="https://yastatic.net/jquery/1.12.0/jquery.min.js"></script>
-	<script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
 	<script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
-
 	<!--noindex-->
 	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
+	<!--<script type="text/javascript">
 		(function (d, w, c) {
 			(w[c] = w[c] || []).push(function () {
 				try {
@@ -349,10 +302,10 @@
 			} else { f(); }
 		})(document, window, "yandex_metrika_callbacks");
 	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/35232140" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<noscript><div><img src="https://mc.yandex.ru/watch/35232140" style="position:absolute; left:-9999px;" alt="" /></div></noscript>-->
 	<!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics Universal -->
-	<script>
+	<!--<script>
 		(function (i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
 				(i[r].q = i[r].q || []).push(arguments)
@@ -363,7 +316,7 @@
 		ga('create', 'UA-72818193-2', 'auto');
 		ga('send', 'pageview');
 
-	</script>
+	</script>-->
 	<!-- /Google Analytics Universal -->
 	<!--/noindex-->
 </body>

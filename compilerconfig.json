@@ -2,5 +2,9 @@
   {
     "outputFile": "css/site.css",
     "inputFile": "css/site.less"
+  },
+  {
+    "outputFile": "css/index.css",
+    "inputFile": "src_less/index.less"
   }
 ]

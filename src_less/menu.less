@@ -1,0 +1,35 @@
+﻿@import (once) 'var.less';
+
+#menu {
+	margin-bottom: 0;
+}
+
+.navbar-inverse .navbar-collapse {
+	position: absolute;
+	width: 100%;
+	background-color: @header-bg-color;
+
+	@media(min-width: @screen-sm-min) {
+		position: static;
+		width: auto;
+		margin-top: 6px;
+		margin-bottom: 6px;
+		border: 1px solid #cbffce;
+		border-left: none;
+		border-right: none;
+	}
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: @header-text-color;
+}
+
+.navbar-nav {
+	float: none;
+	text-align: center;
+}
+
+.nav > li {
+	float: none;
+	display: inline-block;
+}

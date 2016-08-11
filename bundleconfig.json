@@ -1,12 +1,5 @@
 [
   {
-    "outputFileName": "js/ie.js",
-    "inputFiles": [
-      "src_js/respond.min.js",
-      "src_js/modernizr-2.8.3.min.js"
-    ]
-  },
-  {
     "outputFileName": "js/site.js",
     "inputFiles": [
       "js/site.js"
@@ -25,12 +18,6 @@
     "outputFileName": "js/site3d.js",
     "inputFiles": [
       "js/site3d.js"
-    ]
-  },
-  {
-    "outputFileName": "css/bootstrap.css",
-    "inputFiles": [
-      "css/bootstrap.css"
     ]
   }
 ]
