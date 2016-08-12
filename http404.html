@@ -14,10 +14,11 @@
 	<link rel="icon" type="image/x-icon" href="/favicon.ico?v=1.0" />
 
 	<link href="/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="/css/site.min.css?v=1.0" rel="stylesheet" />
+	<link href="/css/index.min.css?v=1.0" rel="stylesheet" />
 
 	<!--[if lt IE 9]>
-	<script src="js/ie.min.js?v=1.0"></script>
+	<script src="/js/html5shiv.min.js"></script>
+	<script src="/js/respond.min.js"></script>
 	<![endif]-->
 </head>
 <body>
@@ -25,141 +26,104 @@
 
 	<header>
 		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<p class="about header-text text-justify">
-						<i>Производство и продажа уборочного инвентаря (круглая метла, плоская метла, щетка гардена) из пластика. Все изделия обладают прочным, износостойким и упругим ворсом. У нас Вы можете купить качественную продукцию с доставкой по всей России.</i>
-					</p>
-				</div>
+			<p class="about">
+				Производство и продажа уборочного инвентаря (круглая метла, плоская метла, щетка гардена) из пластика.
+				Все изделия обладают прочным, износостойким и упругим ворсом.
+				У нас Вы можете купить качественную продукцию с доставкой по всей России.
+			</p>
+			<div class="contacts">
+				<a href="mailto:sales@hozmetla.ru"><span class="glyphicon glyphicon-envelope"></span> sales@hozmetla.ru</a>
+				<span class="hidden-xs">|</span>
+				<br class="visible-xs" />
+				<a href="callto:74912950643"><span class="glyphicon glyphicon-phone-alt"></span> +7 (491) 295-06-43</a>
 			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<p class="contacts text-center">
-						<a href="mailto:sales@hozmetla.ru"><span class="glyphicon glyphicon-envelope"></span> sales@hozmetla.ru</a>
-						<span class="hidden-xs">|</span>
-						<br class="visible-xs" />
-						<a href="callto:74912950643"><span class="glyphicon glyphicon-phone-alt"></span> +7 (491) 295-06-43</a>
-					</p>
+		</div>
+		<nav class="navbar navbar-inverse navbar-static-top" id="menu">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-inner">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 				</div>
-			</div>
-			<nav class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<ul class="menu text-center">
-						<li>
-							<a href="/">
-								<span class="glyphicon glyphicon-home"></span>
-								<span class="note">ДОМАШНЯЯ</span>
-							</a>
-						</li>
-						<li>
-							<a href="/metla.html">
-								<span>PRIMA</span>
-								<span class="note">МЕТЛА</span>
-							</a>
-						</li>
-						<li>
-							<a href="/shchetka-gerda.html">
-								<span>GERDA</span>
-								<span class="note">ЩЕТКА</span>
-							</a>
-						</li>
-						<li>
-							<a href="/shchetka-gardena.html">
-								<span>GARDENA LUX</span>
-								<span class="note">ПЛОСКАЯ МЕТЛА</span>
-							</a>
-						</li>
+				<div class="collapse navbar-collapse" id="menu-inner">
+					<ul class="nav navbar-nav">
+						<li><a href="/">Домашняя</a></li>
+						<li><a href="/metla.html">Круглая метла PRIMA</a></li>
+						<li><a href="/shchetka-gerda.html">Плоская метла GERDA</a></li>
+						<li><a href="/shchetka-gardena.html">Плоская метла GARDENA LUX</a></li>
+						<li class="visible-xs"><a href="/#contacts">Контакты</a></li>
 					</ul>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
 	</header>
 
 
 	<main>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="http404">
-						<h2 class="text-center">Запрашиваемая страница на сайте отсутствует <small>Ошибка 404</small></h2>
-						<h4>Возможные причины, по которым возникла эта ошибка:</h4>
-						<ul>
-							<li>
-								<b>Неправильно указан адрес страницы.</b>
-								<br />Проверьте правильность набора адреса страницы в адресной строке браузера.
-							</li>
-							<li>
-								<b>Эта страница была удалена с сервера либо перемещена по другому адресу.</b>
-								<br />Попробуйте найти интересующий документ, используя навигацию по разделам сайта.
-							</li>
-						</ul>
-					</div>
+		<article class="container">
+			<h2 class="text-center">
+				Запрашиваемая страница на сайте отсутствует <br /><small>Ошибка 404</small>
+			</h2>
+			<br />
+			<h4>Возможные причины, по которым возникла эта ошибка:</h4>
+			<ul>
+				<li>
+					<b>Неправильно указан адрес страницы.</b>
+					<br />Проверьте правильность набора адреса страницы в адресной строке браузера.
+				</li>
+				<li>
+					<b>Эта страница была удалена с сервера либо перемещена по другому адресу.</b>
+					<br />Попробуйте найти интересующий документ, используя навигацию по разделам сайта.
+				</li>
+			</ul>
+			<br />
+			<br />
+			<a href="/metla.html" class="product clearfix">
+				<img src="/img/index-broom.jpg" alt="метла prima" class="img-responsive" />
+				<div class="product-details">
+					<h2>круглая метла <span class="product-caption">prima</span></h2>
+					<div class="product-cost"><span>от 85руб/шт</span></div>
+					<p>
+						Проверенный временем и наиболее распространенный инструмент для уборки.
+						Полипропиленовая метла очень удобна для использования на открытом пространстве.
+						Изделие представляет собой классическую метлу в современном исполнении.
+					</p>
+					<div class="btn">Круглая метла PRIMA</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-					<div class="product404 clearfix">
-						<div class="product-details">
-							<h3 class="text-center">Круглая метла PRIMA</h3>
-							<p class="text-center">
-								Проверенный временем и наиболее распространенный инструмент для уборки.
-								Полипропиленовая метла очень удобна для использования на открытом пространстве.
-								Изделие представляет собой классическую метлу в современном исполнении.
-							</p>
-						</div>
-						<a href="/metla.html" class="product-button btn btn-default"><span class="glyphicon glyphicon-ok"></span> Узнать больше</a>
-					</div>
+			</a>
+			<a href="/shchetka-gerda.html" class="product inverse clearfix">
+				<img src="/img/index-brush.jpg" alt="щетка gerda" class="img-responsive" />
+				<div class="product-details">
+					<h2>универсальная метла <span class="product-caption">gerda</span></h2>
+					<div class="product-cost"><span>от 72руб/шт</span></div>
+					<p>
+						Новинка в мире уборочного инвентаря.
+						Щетка GERDA является наиболее универсальным инструментом для уборки как в помещении, так и на улице.
+						Изделие обладает отличными эксплуатационными характеристиками и позволяет выполнить качественную уборку в труднодоступных местах.
+					</p>
+					<div class="btn">Плоская метла GERDA</div>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-					<div class="product404 clearfix">
-						<div class="product-details2">
-							<h3 class="text-center">Универсальная метла GERDA</h3>
-							<p class="text-center">
-								Новинка в мире уборочного инвентаря.
-								Щетка GERDA является наиболее универсальным инструментом для уборки как в помещении, так и на улице.
-								Изделие обладает отличными эксплуатационными характеристиками и позволяет выполнить качественную уборку в труднодоступных местах.
-							</p>
-						</div>
-						<a href="/shchetka-gerda.html" class="product-button2 btn btn-default"><span class="glyphicon glyphicon-ok"></span> Узнать больше</a>
-					</div>
+			</a>
+			<a href="/shchetka-gardena.html" class="product clearfix">
+				<img src="/img/index-brush-wide.jpg" alt="щетка gardena lux" class="img-responsive" />
+				<div class="product-details">
+					<h2>ПЛОСКАЯ МЕТЛА <span class="product-caption">GARDENA LUX</span></h2>
+					<div class="product-cost"><span>от 70руб/шт</span></div>
+					<p>
+						Данный инструмент расширяет возможности применения круглой метлы и обладает улучшенными эксплуатационными характеристиками.
+						Щетка гардена удобна для использования на открытом пространстве.
+						Эта плоская метла позволяет выполнить качественную уборку обширной территории.
+					</p>
+					<div class="btn">Плоская метла GARDENA LUX</div>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-					<div class="product404 clearfix">
-						<div class="product-details">
-							<h3 class="text-center">Плоская метла GARDENA LUX</h3>
-							<p class="text-center">
-								Данный инструмент расширяет возможности применения круглой метлы и обладает улучшенными эксплуатационными характеристиками.
-								Щетка гардена удобна для использования на открытом пространстве.
-								Эта плоская метла позволяет выполнить качественную уборку обширной территории.
-							</p>
-						</div>
-						<a href="/shchetka-gardena.html" class="product-button btn btn-default"><span class="glyphicon glyphicon-ok"></span> Узнать больше</a>
-					</div>
-				</div>
-			</div>
-		</div>
+			</a>
+		</article>
 	</main>
 
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<p class="about text-justify">
-						<i>
-							Компания &laquo;Центр ВТО&raquo; основана в 1997 году.
-							Наша миссия - выпуск качественных и недорогих изделий для широкого круга покупателей.
-							Мы постоянно совершенствуем технологический процесс.
-							Мы используем самые современные разработки в области изготовления щеток.
-						</i>
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<script src="https://yastatic.net/jquery/1.12.0/jquery.min.js"></script>
-	<script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
 	<script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
 

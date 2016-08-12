@@ -322,6 +322,9 @@ footer {
   background-color: #222;
   color: #d4d4d4;
 }
+footer .about {
+  text-align: center;
+}
 .promo {
   margin-bottom: 20px;
 }
