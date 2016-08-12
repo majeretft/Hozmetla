@@ -1,0 +1,64 @@
+﻿@import (once) '../var.less';
+
+.modal-fs {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(125, 125, 125, 0.9);
+	z-index: 1001;
+	display: table;
+
+	.close-fs,
+	.right-fs,
+	.left-fs {
+		position: absolute;
+		color: @bs-primary-bg-color;
+		background-color: #eee;
+		border: 1px solid @bs-primary-bg-color;
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+		font-size: 26px;
+		cursor: pointer;
+		z-index: 200;
+		transition: all ease-in-out 0.1s;
+
+		&:hover {
+			transform: scale(1.2);
+			color: darken(@bs-primary-bg-color, 15%);
+			background-color: #fff;
+			border: 1px solid darken(@bs-primary-bg-color, 15%);
+		}
+	}
+
+	.close-fs {
+		padding: 4px 0 0 6px;
+		top: 10px;
+		right: 10px;
+	}
+
+	.right-fs,
+	.left-fs {
+		top: 50%;
+		padding: 3px 0 0 5px;
+		margin-top: -20px;
+	}
+
+	.right-fs {
+		right: 15px;
+	}
+
+	.left-fs {
+		left: 15px;
+	}
+
+	.photo-fs {
+		width: 100%;
+		height: 100%;
+		display: table-cell;
+		vertical-align: middle;
+		padding: 25px;
+	}
+}

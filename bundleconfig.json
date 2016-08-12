@@ -1,6 +1,6 @@
 [
   {
-    "outputFileName": "js/site.js",
+    "outputFileName": "js/site.min.js",
     "inputFiles": [
       "js/site.js"
     ]
@@ -15,7 +15,7 @@
     ]
   },
   {
-    "outputFileName": "js/site3d.js",
+    "outputFileName": "js/site3d.min.js",
     "inputFiles": [
       "js/site3d.js"
     ]

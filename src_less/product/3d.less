@@ -1,0 +1,49 @@
+﻿@import (once) '../var.less';
+
+#area3d {
+	position: relative;
+	border: 1px solid @bs-primary-bg-color;
+	max-width: 506px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../../img/watermark_hozmetla_3d.png);
+	background-repeat: repeat;
+	background-size: 100px;
+
+	@media(min-width: @screen-sm-min) {
+		max-width: 606px;
+	}
+
+	@media(min-width: @screen-md-min) {
+		max-width: 80%;
+		background-size: 200px;
+	}
+
+	@media(min-width: @screen-lg-min) {
+		max-width: 75%;
+	}
+
+	#load-wrapper {
+		display: table;
+
+		> div {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		#load {
+			font-size: 50px;
+		}
+	}
+
+	#pause, #toggle, #load {
+		color: @bs-primary-bg-color;
+		border-color: transparent;
+		background-color: transparent;
+	}
+
+	#pause {
+		margin-right: 15px;
+	}
+}
