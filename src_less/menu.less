@@ -32,9 +32,18 @@
 }
 
 @media(min-width: @screen-sm-min) {
-	.navbar-nav {
+	/*.navbar-nav {
 		float: none;
 		margin: 0 auto;
 		width: 695px;
+	}*/
+	.navbar .navbar-nav {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+
+	.navbar .navbar-collapse {
+		text-align: center;
 	}
 }
