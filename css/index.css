@@ -66,10 +66,18 @@ header .contacts {
   background-color: #006506;
 }
 @media (min-width: 768px) {
-  .navbar-nav {
+  /*.navbar-nav {
+		float: none;
+		margin: 0 auto;
+		width: 695px;
+	}*/
+  .navbar .navbar-nav {
+    display: inline-block;
     float: none;
-    margin: 0 auto;
-    width: 695px;
+    vertical-align: top;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
   }
 }
 @font-face {

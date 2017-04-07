@@ -66,10 +66,18 @@ header .contacts {
   background-color: #006506;
 }
 @media (min-width: 768px) {
-  .navbar-nav {
+  /*.navbar-nav {
+		float: none;
+		margin: 0 auto;
+		width: 695px;
+	}*/
+  .navbar .navbar-nav {
+    display: inline-block;
     float: none;
-    margin: 0 auto;
-    width: 695px;
+    vertical-align: top;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
   }
 }
 @font-face {
@@ -254,6 +262,7 @@ footer .contacts .address {
   background-color: rgba(125, 125, 125, 0.9);
   z-index: 1001;
   display: table;
+  table-layout: fixed;
 }
 .modal-fs .close-fs,
 .modal-fs .right-fs,
@@ -297,7 +306,6 @@ footer .contacts .address {
 }
 .modal-fs .photo-fs {
   width: 100%;
-  height: 100%;
   display: table-cell;
   vertical-align: middle;
   padding: 25px;
