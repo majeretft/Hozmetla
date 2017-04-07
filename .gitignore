@@ -233,7 +233,5 @@ $RECYCLE.BIN/
 /_models
 /_temp
 /.vs
-*.min.js
 *.min.js.map
-*.min.css
 *.min.css.map
